@@ -26,11 +26,13 @@ useHead({ title })
 
 <template>
   <main class="main-site">
-    <BlocksHero />
-    <BlocksMarquee />
-    <BlocksIntro />
-    <BlocksForm />
-    <BlocksInfo />
-    <BlocksShare />
+    <LegosBackground>
+      <BlocksHero />
+      <BlocksMarquee />
+      <BlocksIntro />
+      <BlocksForm />
+      <BlocksInfo />
+      <BlocksShare />
+    </LegosBackground>
   </main>
 </template>

@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer">
-    <div class="container padded">
+  <footer class="footer relative z-[5] pb-24 bg-blue">
+    <div class="p-site mx-auto min-h-[7rem] flex items-end gap-4">
       <SiteLogo class="footer-logo" />
       <p>
         <strong>Passatgers amb Drets</strong>
@@ -15,16 +15,8 @@
 
 <style lang="scss" scoped>
 .footer {
-  margin-top: 10vh;
-
   &-logo {
     height: 1.5rem;
-  }
-
-  .container {
-    display: flex;
-    gap: var(--spacer-4);
-    align-items: center;
   }
 
   p {

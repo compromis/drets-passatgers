@@ -28,6 +28,12 @@ export default {
       '¿Te venden un billete, te dejan tirado y no te reembolsan?',
       '¿Te dicen que no pueden hacer nada?',
       '¿Te cobran de más por una maleta de mano?',
-    ]
+    ],
+    cta: 'Denuncia'
+  },
+  hero: {
+    headline: 'Tus derechos existenpero no se cumplen',
+    line1: 'Tus derechos existen',
+    line2: 'pero no se cumplen'
   }
 }

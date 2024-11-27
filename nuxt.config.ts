@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://api.paxrights.compromis.net/api/'
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://forms.compromis.net/api/pax-rights/'
     }
   },
 
@@ -37,6 +37,10 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://compromis.net/sub/fonts/manrope.css?variable',
+        },
+        {
+          rel: 'stylesheet',
+          href: ' https://use.typekit.net/ato5abe.css',
         }
       ],
       script: [

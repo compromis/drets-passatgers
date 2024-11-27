@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div>
-    
+  <div class="bg-blue h-[600px]">
+    Share
   </div>
 </template>
 

@@ -4,10 +4,13 @@
   --font-base: #{$font-base};
   --font-headline: #{$font-headline};
   --green: #{$green};
-  --pine: #{$pine};
+  --blue: #{$blue};
+  --red: #{$red};
+  --brown: #{$brown};
   --orange: #{$orange};
   --yellow: #{$yellow};
   --black: #{$black};
+  --gray: #{$gray};
   --white: #{$white};
   --container-max-width: #{$container-max-width};
   --spacer-1: .25rem;
@@ -25,9 +28,10 @@
   --spacer-16: 6rem;
   --spacer-18: 8rem;
   --site-padding: var(--spacer-4);
+  --navbar-safe-area: 5rem;
   --text-sm: clamp(0.8rem, 0.08vi + 0.78rem, 0.84rem);
   --text-base: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
-  --text-md: clamp(1.25rem, 0.45vi + 1.14rem, 1.5rem);
+  --text-md: clamp(1.15rem, 0.35vi + 1.05rem, 1.3rem);
   --text-lg: clamp(1.56rem, 0.79vi + 1.36rem, 2rem);
   --text-xl: clamp(1.95rem, 1.29vi + 1.63rem, 2.66rem);
   --text-2xl: clamp(2.44rem, 2.02vi + 1.94rem, 3.55rem);

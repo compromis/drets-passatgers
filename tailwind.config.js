@@ -5,18 +5,18 @@ export default {
   ],
   theme: {
     colors: {
-      'red': '#e0602e',
-      'blue': '#3f85c1',
-      'yellow': '#fad414',
-      'green': '#099e76',
-      'pink': '#e3aaca',
-      'black': '#1e1e1e',
-      'white': '#f7eee8',
-      'gray': '#71717a',
+      'red': '#F2430E',
+      'blue': '#1968A9',
+      'yellow': '#F8AC20',
+      'green': '#148E6C',
+      'brown': '#6C4116',
+      'black': '#02111B',
+      'white': '#fff',
+      'gray': '#979AA4',
     },
     fontFamily: {
       sans: ['Manrope', 'sans-serif'],
-      headline: ['Headlne45', 'sans-serif'],
+      headline: ['mono45-headline', 'sans-serif'],
     },
     fontSize: {
       'xs': 'var(--text-xs)',

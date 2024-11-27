@@ -44,7 +44,7 @@ onMounted(() => {
     left: 0;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1100;
 
     .logo {
       display: flex;
@@ -73,6 +73,20 @@ onMounted(() => {
         text-decoration: underline;
         text-underline-offset: 4px;
       }
+    }
+  }
+
+  &-header {
+    &::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6rem;
+      pointer-events: none;
+      background: linear-gradient(to bottom, rgba(2, 17, 27, .6), rgba(2, 17, 27, 0));
+      z-index: 1000;
     }
   }
 }

@@ -18,14 +18,21 @@ const items = [
 </script>
 
 <template>
-  <LegosCard>
-    <h2>{{ $t('info.heading') }}</h2>
-    <LegosAccordion
-      :items="items"
-    />
-  </LegosCard>
+  <div class="info bg-gradient-to-b from-blue/0 to-blue pb-10">
+    <div class="container mx-auto">
+      <LegosCard class="h-[500px]">
+        <h2>{{ $t('info.heading') }}</h2>
+        <LegosAccordion
+          id="accordion"
+          :items="items"
+        />
+      </LegosCard>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+.info {
 
+}
 </style>
