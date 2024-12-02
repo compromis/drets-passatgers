@@ -32,8 +32,8 @@ export default {
     cta: 'Denuncia'
   },
   hero: {
-    headline: 'Tus derechos existenpero no se cumplen',
-    line1: 'Tus derechos existen',
-    line2: 'pero no se cumplen'
+    headline: 'Tus derechos como pasajerono son un negocio',
+    line1: 'Tus derechos como pasajero',
+    line2: 'no son un negocio'
   }
 }

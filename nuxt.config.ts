@@ -69,7 +69,8 @@ export default defineNuxtConfig({
     defaultLocale: 'val',
     locales: [
       { code: 'val', iso: 'ca', name: 'Valencià', file: 'val.js' },
-      { code: 'cas', iso: 'es', name: 'Castellano', file: 'cas.js' }
+      { code: 'cas', iso: 'es', name: 'Castellano', file: 'cas.js' },
+      { code: 'eng', iso: 'en', name: 'English', file: 'eng.js' }
     ],
     lazy: true,
     langDir: 'lang',

@@ -29,7 +29,10 @@ useHead({ title })
     <LegosBackground>
       <BlocksHero />
       <BlocksMarquee />
-      <BlocksIntro />
+      <div class="relative">
+        <BlocksIntro />
+        <AnimatedPlane />
+      </div>
       <BlocksForm />
       <BlocksInfo />
       <BlocksShare />

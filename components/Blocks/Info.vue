@@ -20,7 +20,7 @@ const items = [
 <template>
   <div class="info bg-gradient-to-b from-blue/0 to-blue pb-10">
     <div class="container mx-auto">
-      <LegosCard class="h-[500px]">
+      <LegosCard class="info-card h-[500px]">
         <h2>{{ $t('info.heading') }}</h2>
         <LegosAccordion
           id="accordion"
@@ -32,7 +32,8 @@ const items = [
 </template>
 
 <style lang="scss" scoped>
-.info {
-
+.info-card {
+  max-width: 1250px;
+  margin-inline: auto;
 }
 </style>

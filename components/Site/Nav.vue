@@ -15,9 +15,17 @@ onMounted(() => {
 <template>
   <header class="pax-header">
     <nav :class="['pax-nav', { scrolled }]">
-      <a href="https://compromis.net" :aria-label="$t('assist.logo')" class="logo">
-        <SiteLogo />
-      </a>
+      <div class="flex gap-site">
+        <a href="https://compromis.net" :aria-label="$t('assist.logo')" class="logo compromis">
+          <SiteLogo />
+        </a>
+        <a href="https://greens-efa.eu" aria-label="Greens/EFA in the European Parliament" class="logo greensefa">
+          <SiteGreensEFA />
+        </a>
+        <a href="https://europarl.compromis.net" aria-label="Oficina Vicent Marzà" class="logo marza">
+          <SiteVicentMarza />
+        </a>
+      </div>
       <div class="pax-languages">
         <template v-for="lang in locales" :key="lang.code">
           <SwitchLocalePathLink
@@ -54,6 +62,10 @@ onMounted(() => {
       text-decoration: none;
 
       svg {
+        height: 2.25rem;
+      }
+
+      &.compromis svg {
         height: 1.8rem;
       }
 
@@ -64,6 +76,9 @@ onMounted(() => {
   }
 
   &-languages {
+    display: flex;
+    gap: var(--site-padding);
+
     :deep(a) {
       color: var(--white);
       font-size: 1.25rem;

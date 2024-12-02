@@ -10,7 +10,6 @@ onMounted(() => {
 
   for (const flip of flips) {
     const [foldTop, foldBottom, unfoldTop, unfoldBottom] = Array.from(flip.querySelectorAll('.hero-panel .letter span'))
-    console.log(flip)
     foldTop.innerText = foldBottom.innerText = CHARACTERS[0]
     unfoldTop.innerText = unfoldBottom.innerText = CHARACTERS[1]
 
@@ -125,7 +124,7 @@ onMounted(() => {
     background: color-mix(in oklch, canvas, canvasText 15%);
     top: 50%;
     translate: 0 -50%;
-    border: 0.025em solid black;
+    border: 0.025em solid var(--black);
   }
 
   .letter::before {
@@ -149,6 +148,7 @@ onMounted(() => {
 
   .letter span {
     position: absolute;
+    border-radius: .25rem;
     transform-style: preserve-3d;
     position: absolute;
     -webkit-backface-visibility: hidden;
@@ -157,10 +157,10 @@ onMounted(() => {
     inset: 0;
     background: radial-gradient(
         100% 100% at 50% 100%,
-        hsl(0 0% 100% / 0.2),
+        hsla(0, 0%, 100%, 0.2),
         #0000
       ),
-      hsl(0 0% 15%);
+      hsl(218, 13%, 17%);
   }
 
   .letter span:nth-of-type(odd) {
