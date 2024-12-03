@@ -41,10 +41,13 @@ async function submit () {
 </script>
 
 <template>
-  <div class="form container mx-auto -mt-28 mb-16 relative z-[20] p-site pb-10">
-    <LegosCard class="max-w-[800px] ms-auto">
-      <h2>{{ $t('form.heading') }}</h2>
-      <form v-if="!submitted" @submit.prevent="submit" class="grid grid-cols-2">
+  <div class="form container mx-auto -mt-28 mb-16 relative z-[20] p-site pb-10 text-base">
+    <LegosCard class="max-w-[800px] ms-auto overflow-clip" edge>
+      <h2 class="flex px-6 py-4 gap-4 font-bold border-b-2">
+        <img src="../../assets/images/triangle.svg" alt="" />
+        {{ $t('form.heading') }}
+      </h2>
+      <form v-if="!submitted" @submit.prevent="submit" class="grid gap-[2px] grid-cols-2 bg-black">
         <InputsSelect
           name="incident"
           :label="$t('form.fields.incident')"
@@ -52,6 +55,7 @@ async function submit () {
           v-model="form.incident"
           required
           :errors="errors"
+          class="col-span-2"
         />
         <InputsText
           name="name"
@@ -87,8 +91,9 @@ async function submit () {
           :label="$t('form.fields.description')"
           v-model="form.description"
           :errors="errors"
+          class="col-span-2"
         />
-        <div>
+        <div class="col-span-2 bg-white">
           <InputsCheckbox
             v-model="form.privacy"
             required

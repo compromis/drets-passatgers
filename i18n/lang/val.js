@@ -35,5 +35,16 @@ export default {
     headline: 'Tus derechos como pasajerono son un negocio',
     line1: 'Tus derechos como pasajero',
     line2: 'no son un negocio'
+  },
+  form: {
+    heading: 'Denuncia',
+    fields: {
+      incident: "Tipus d'incident",
+      name: 'Nom i cognoms',
+      email: 'Email',
+      airline: 'Aerolínea',
+      flight: 'Núm. de vuelo',
+      description: 'Descripció breu'
+    }
   }
 }

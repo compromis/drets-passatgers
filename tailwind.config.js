@@ -12,11 +12,15 @@ export default {
       'brown': '#6C4116',
       'black': '#02111B',
       'white': '#fff',
-      'gray': '#979AA4',
+      'gray': {
+        light: '#E8E9F2',
+        DEFAULT: '#979AA4'
+      },
     },
     fontFamily: {
       sans: ['Manrope', 'sans-serif'],
       headline: ['mono45-headline', 'sans-serif'],
+      mono: ['Space Mono', 'sans-serif'],
     },
     fontSize: {
       'xs': 'var(--text-xs)',

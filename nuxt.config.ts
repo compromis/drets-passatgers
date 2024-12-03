@@ -53,12 +53,7 @@ export default defineNuxtConfig({
     '~/assets/scss/main.scss'
   ],
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n',
-    '@vueuse/nuxt',
-    '@nuxt/icon'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/icon', '@nuxtjs/google-fonts'],
 
   vue: {
     defineModel: true,
@@ -88,6 +83,12 @@ export default defineNuxtConfig({
           `
         }
       }
+    }
+  },
+
+  googleFonts: {
+    families: {
+      'Space+Mono': [400]
     }
   }
 })

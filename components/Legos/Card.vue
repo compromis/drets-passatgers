@@ -1,9 +1,11 @@
 <script setup>
-
+defineProps({
+  edge: { type: Boolean, default: false }
+})
 </script>
 
 <template>
-  <section class="card bg-white border-2 rounded-xl p-8">
+  <section :class="['card bg-white border-2 rounded-xl', { 'p-8': !edge }]">
     <slot />
   </section>
 </template>
