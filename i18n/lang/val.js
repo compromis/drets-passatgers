@@ -46,5 +46,23 @@ export default {
       flight: 'Núm. de vuelo',
       description: 'Descripció breu'
     }
+  },
+  info: {
+    heading: 'Conoce tus derechos',
+    delayed: {
+      heading: 'Si se retrasa tu vuelo'
+    },
+    cancelled: {
+      heading: 'Si se cancela tu vuelo'
+    },
+    denied: {
+      heading: 'Si te deniegan el embarque'
+    },
+    luggage: {
+      heading: 'Si te pierden o te dañan la maleta'
+    },
+    accessibility: {
+      heading: 'Accesibilidad movilidad reducida'
+    }
   }
 }

@@ -1,5 +1,5 @@
 /* Colors */
-$orange: #FF6720;
+$orange: #df5e22;
 $yellow: #F8AC20;
 $red: #F2430E;
 $green: #148E6C;
@@ -8,6 +8,7 @@ $brown: #6C4116;
 $black: #02111b;
 $white: #fff;
 $light-gray: #f4f4f5;
+$dark-gray: #4a4a50;
 $gray: #71717a;
 
 /* Typography */
@@ -27,3 +28,12 @@ $breakpointsdsd: (
 /* Sizing */
 $container-max-width: 1200px;
 
+/* Utils */
+$colors: (
+  "orange": $orange,
+  "yellow": $yellow,
+  "red": $red,
+  "green": $green,
+  "blue": $blue,
+  "brown": $brown,
+);

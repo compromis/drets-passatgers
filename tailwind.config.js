@@ -6,6 +6,7 @@ export default {
   theme: {
     colors: {
       'red': '#F2430E',
+      'orange': '#df5e22',
       'blue': '#1968A9',
       'yellow': '#F8AC20',
       'green': '#148E6C',
@@ -14,7 +15,8 @@ export default {
       'white': '#fff',
       'gray': {
         light: '#E8E9F2',
-        DEFAULT: '#979AA4'
+        DEFAULT: '#979AA4',
+        dark: '#4a4a50'
       },
     },
     fontFamily: {
