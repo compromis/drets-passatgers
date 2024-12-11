@@ -5,8 +5,8 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <div class="p-6 pt-0 flex flex-col gap-6 text-md">
-    <p>{{ t('item0') }}</p>
+  <div class="p-6 pt-0 flex flex-col gap-6 text-base">
+    <p class="font-bold">{{ t('item0') }}</p>
     <ul class="flex flex-col gap-6">
       <li class="line">
         <div class="icon bg-brown/25">
@@ -27,7 +27,7 @@ const { t } = useI18n({
         </div>
       </li>
     </ul>
-    <p>{{ t('item3') }}</p>
+    <p class="font-bold">{{ t('item3') }}</p>
     <ul class="flex flex-col gap-6">
       <li class="line">
         <div class="icon bg-brown/25">

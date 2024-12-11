@@ -13,12 +13,12 @@ function setItem(id) {
 
 <template>
   <div :id="id" class="accordion">
-    <div v-for="(item, i) in items" :key="i" :class="['accordion-item', `color-${item.color}`, 'border-b-2 border-b-black', { open: openItem === i }]">
+    <div v-for="(item, i) in items" :key="i" :class="['accordion-item', `color-${item.color}`, { open: openItem === i }]">
       <h4 class="accordion-title">
         <button
           type="button"
           :aria-expanded="openItem === i ? 'true' : 'false'"
-          class="flex gap-4 p-4 w-full items-center"
+          class="flex gap-4 px-4 py-6 w-full items-center text-left leading-none"
           :aria-controls="`${id}-item-${i}`"
           :id="`${id}-button-${i}`"
           @click="setItem(i)"
@@ -58,6 +58,10 @@ function setItem(id) {
     font-weight: bold;
   }
 
+  &-icon {
+    flex-shrink: 0;
+  }
+
   &-handle {
     display: flex;
     align-items: center;
@@ -69,28 +73,34 @@ function setItem(id) {
     transform-origin: center;
   }
 
-  &-item:not(.open):hover {
-    background-color: var(--light-gray);
-  }
+  &-item {
+    &:not(:last-child) {
+      border-bottom: 2px var(--black) solid;
+    }
 
-  &-item.color-orange.open {
-    background: linear-gradient(to bottom, #df5e2251, #df5e2200 10rem);
-  }
+    &:not(.open):hover {
+      background-color: var(--light-gray);
+    }
 
-  &-item.color-red.open {
-    background: linear-gradient(to bottom, #f2430e5b, #f2430e00 10rem);
-  }
+    &.color-orange.open {
+      background: linear-gradient(to bottom, #df5e2251, #df5e2200 10rem);
+    }
 
-  &-item.color-black.open {
-    background: linear-gradient(to bottom, #02111b42, #02111b00 10rem);
-  }
+    &.color-red.open {
+      background: linear-gradient(to bottom, #f2430e5b, #f2430e00 10rem);
+    }
 
-  &-item.color-brown.open {
-    background: linear-gradient(to bottom, #6c41163e, #6C411600 10rem);
-  }
+    &.color-black.open {
+      background: linear-gradient(to bottom, #02111b42, #02111b00 10rem);
+    }
 
-  &-item.color-blue.open {
-    background: linear-gradient(to bottom, #1968a94d, #1968a900 10rem);
+    &.color-brown.open {
+      background: linear-gradient(to bottom, #6c41163e, #6C411600 10rem);
+    }
+
+    &.color-blue.open {
+      background: linear-gradient(to bottom, #1968a94d, #1968a900 10rem);
+    }
   }
 }
 

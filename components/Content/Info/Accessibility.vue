@@ -5,7 +5,7 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <div class="p-6 pt-0 flex flex-col gap-6 text-md">
+  <div class="p-6 pt-0 flex flex-col gap-6 text-base">
     <ul class="flex flex-col gap-6">
       <li class="line">
         <div class="icon bg-blue/25 aspect-square shrink-0">
@@ -50,6 +50,10 @@ const { t } = useI18n({
     display: flex;
     align-items: center;
     color: var(--color);
+    justify-content: center;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
   }
 
   ul {

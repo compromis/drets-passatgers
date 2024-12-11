@@ -5,7 +5,7 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <ul class="p-6 pt-0 flex flex-col gap-6 text-md">
+  <ul class="p-6 pt-0 flex flex-col gap-6 text-base">
     <li class="line">
       <div class="icon bg-black/25">
         <Icon name="solar:banknote-2-linear" />

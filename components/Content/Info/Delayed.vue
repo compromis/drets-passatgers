@@ -5,8 +5,8 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <div class="p-6 pt-0 flex flex-col gap-6 text-md">
-    <div class="flex gap-6 items-center">
+  <div class="p-6 pt-0 flex flex-col gap-6 text-base">
+    <div class="flex gap-6">
       <div class="bg-orange/25 font-bold p-4 rounded-lg shrink-0 w-fit flex items-center text-brown">
         {{ t('over2.tag') }}
       </div>
