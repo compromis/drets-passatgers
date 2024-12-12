@@ -1,4 +1,6 @@
 <script setup>
+import Rellax from 'rellax'
+
 const { t } = useI18n()
 const title = t('meta.title')
 const description = t('meta.description')
@@ -22,6 +24,10 @@ useServerSeoMeta({
   ogLocale: 'ca'
 })
 useHead({ title })
+
+onMounted(() => {
+  const rellax = new Rellax('.rellax')
+})
 </script>
 
 <template>
@@ -29,11 +35,11 @@ useHead({ title })
     <LegosBackground>
       <BlocksHero />
       <div class="relative">
-        <BlocksIntro />
+        <BlocksIntro class="rellax" data-rellax-speed="1.1" />
         <AnimatedPlane />
       </div>
       <div class="relative form-container">
-        <BlocksForm />
+        <BlocksForm class="rellax" data-rellax-speed="2.2" />
         <AnimatedPlane bis />
       </div>
       <BlocksInfo />
