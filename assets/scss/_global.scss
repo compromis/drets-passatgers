@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-padding-block-start: 6rem;
 
   @include media('<md') {
     font-size: .85rem;

@@ -35,6 +35,7 @@ useHead({ title })
       </div>
       <BlocksForm />
       <BlocksInfo />
+      <BlocksProposal />
       <BlocksShare />
     </LegosBackground>
   </main>

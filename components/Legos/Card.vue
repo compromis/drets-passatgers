@@ -5,9 +5,9 @@ defineProps({
 </script>
 
 <template>
-  <section :class="['card bg-white border-2 rounded-xl', { 'p-8': !edge }]">
+  <article :class="['card bg-white border-2 rounded-xl', { 'p-8': !edge }]">
     <slot />
-  </section>
+  </article>
 </template>
 
 <style lang="scss" scoped>

@@ -10,8 +10,8 @@ const value = defineModel()
 </script>
 
 <template>
-  <div class="bg-white">
-    <label :for="id || name" class="flex font-mono uppercase bg-gray-light text-sm px-6 py-2">
+  <div class="input bg-white">
+    <label :for="id || name" class="flex font-mono uppercase text-sm px-4 py-1">
       {{ label }}
     </label>
     <select
@@ -19,7 +19,7 @@ const value = defineModel()
       :name="name"
       v-model="value" 
       v-bind="$attrs"
-      class="block w-full px-6 py-3"
+      class="block w-full px-4 py-3 focus:outline-none focus:bg-yellow/25"
     >
       <option v-for="option in options" :key="option.value" :value="option.value">
         {{ option.text }}
@@ -29,5 +29,13 @@ const value = defineModel()
 </template>
 
 <style lang="scss" scoped>
+label {
+  background: var(--light-gray);
+}
 
+.input:focus-within {
+  label {
+    background: var(--yellow);
+  }
+}
 </style>

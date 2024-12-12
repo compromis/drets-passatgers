@@ -41,9 +41,9 @@ async function submit () {
 </script>
 
 <template>
-  <div class="form container mx-auto -mt-28 mb-16 relative z-[20] p-site pb-10 text-base">
+  <section id="form" class="form container mx-auto -mt-28 mb-16 relative z-[20] p-site pb-10 text-base">
     <LegosCard class="max-w-[800px] ms-auto overflow-clip" edge>
-      <h2 class="flex px-6 py-4 gap-4 font-bold border-b-2">
+      <h2 class="flex px-6 py-4 gap-4 font-bold border-b-2 text-md">
         <img src="../../assets/images/triangle.svg" alt="" />
         {{ $t('form.heading') }}
       </h2>
@@ -93,14 +93,14 @@ async function submit () {
           :errors="errors"
           class="col-span-2"
         />
-        <div class="col-span-2 bg-white">
+        <div class="col-span-2 bg-white flex p-4 items-center gap-4">
           <InputsCheckbox
             v-model="form.privacy"
             required
           >
             {{ $t('form.privacy') }}
           </InputsCheckbox>
-          <InputsButton type="submit" :disable="submitting">
+          <InputsButton type="submit" :loading="submitting" icon="wpf:paper-plane" class="ms-auto">
             {{ submitting ? $t('form.submitting') : $t('form.submit') }}
           </InputsButton>
         </div>
@@ -109,7 +109,7 @@ async function submit () {
         Submitted
       </div>
     </LegosCard>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

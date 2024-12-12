@@ -15,9 +15,6 @@ export default {
     privacy_policy: 'Política de privacitat',
     loading: 'Carregant...'
   },
-  footer: {
-    campaign_by: 'és una campanya de'
-  },
   marquee: {
     questions: [
       '¿Te cancelan el vuelo y te dejan tirado?',
@@ -45,7 +42,9 @@ export default {
       airline: 'Aerolínea',
       flight: 'Núm. de vuelo',
       description: 'Descripció breu'
-    }
+    },
+    submit: 'Enviar denuncia',
+    optional: 'Opcional'
   },
   info: {
     heading: 'Conoce tus derechos',
@@ -64,5 +63,13 @@ export default {
     accessibility: {
       heading: 'Accesibilidad movilidad reducida'
     }
+  },
+  share: {
+    title: 'Haz difusión',
+    text: 'Comparte esta página con tus amistades.',
+    other: 'Otros...',
+    shareable_title: '',
+    shareable_image: '',
+    shareable_text: 'message'
   }
 }
