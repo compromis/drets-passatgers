@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+const props = defineProps({
+  bis: { type: Boolean, default: false }
+})
+
 const { $gsap } = useNuxtApp()
 const airplane = ref(null)
 
@@ -10,12 +14,26 @@ const setMousePos = ({ pageX, pageY }) => {
 onMounted(() => {
   document.addEventListener('mousemove', setMousePos)
 
-  $gsap.from(airplane.value, {
-    x: '-100vw',
-    y: '100vh',
-    ease: "power4.out",
-    duration: 5
-  })
+  if (props.bis) {
+    $gsap.to(airplane.value, {
+      x: '43vw',
+      y: '-40vh',
+      ease: "power4.out",
+      duration: 5,
+      scrollTrigger: {
+        trigger: '.form-container',
+        start: 'top center',
+        markers: true
+      }
+    })
+  } else {
+    $gsap.from(airplane.value, {
+      x: '-100vw',
+      y: '100vh',
+      ease: "power4.out",
+      duration: 5,
+    })
+  }
 })
 
 const computedParallax = computed(() => {
@@ -32,7 +50,7 @@ const computedParallax = computed(() => {
 </script>
 
 <template>
-  <div ref="airplane" class="airplane">
+  <div ref="airplane" :class="['airplane', { bis }]">
     <img src="../../assets/images/airplane.png" alt="Airplane" :style="computedParallax" />
   </div>
 </template>
@@ -46,6 +64,14 @@ const computedParallax = computed(() => {
 
   img {
     width: 100%;
+  }
+
+  &.bis {
+    top: auto;
+    bottom: -45vh;
+    left: -50vw;
+    right: auto;
+    width: 42vw;
   }
 }
 </style>

@@ -28,15 +28,18 @@ useHead({ title })
   <main class="main-site">
     <LegosBackground>
       <BlocksHero />
-      <BlocksMarquee />
       <div class="relative">
         <BlocksIntro />
         <AnimatedPlane />
       </div>
-      <BlocksForm />
+      <div class="relative form-container">
+        <BlocksForm />
+        <AnimatedPlane bis />
+      </div>
       <BlocksInfo />
       <BlocksProposal />
       <BlocksShare />
+      <BlocksMarquee />
     </LegosBackground>
   </main>
 </template>
