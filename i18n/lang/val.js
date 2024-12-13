@@ -43,8 +43,22 @@ export default {
       flight: 'Núm. de vuelo',
       description: 'Descripció breu'
     },
+    incidents: [
+      "Maleta perdida",
+      "Maleta dañada",
+      "Cobros excesivos por el equipaje",
+      "No hay accesibilidad en tu vuelo",
+      "Cancelación del vuelo",
+      "Retraso de tu vuelo",
+      "Denegación de embarque",
+      "Otro"
+    ],
     submit: 'Enviar denuncia',
-    optional: 'Opcional'
+    submitting: 'Enviant...',
+    optional: 'Opcional',
+    submitted: 'Hem rebut la teua denúncia',
+    submitted_text: 'La tramitarem per tu i ens posarem en contacte amb més informació.',
+    new: 'Enviar altra denúncia'
   },
   info: {
     heading: 'Conoce tus derechos',

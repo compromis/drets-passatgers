@@ -20,7 +20,7 @@ const value = defineModel()
       :name="name"
       v-bind="$attrs"
       v-model="value"
-      class="block w-full px-4 py-3 focus:outline-none focus:bg-yellow/25""
+      class="block w-full px-4 py-3 focus:outline-none focus:shadow-none text-base focus:bg-yellow/25 border-none"
     />
   </div>
 </template>
@@ -39,5 +39,9 @@ label {
 textarea {
   field-sizing: content;
   min-height: 100px;
+
+  &:focus {
+    box-shadow: none !important;
+  }
 }
 </style>

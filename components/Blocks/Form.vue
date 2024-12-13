@@ -4,8 +4,13 @@ const { t, locale } = useI18n()
 
 const incidentOptions = [
   { value: 'LostLuggage', text: t('form.incidents.0') },
-  { value: 'Delayed', text: t('form.incidents.1') },
-  { value: 'DeniedBoarding', text: t('form.incidents.2') },
+  { value: 'DamangedLuggage', text: t('form.incidents.1') },
+  { value: 'PaidCarryOn', text: t('form.incidents.2') },
+  { value: 'Accessibility', text: t('form.incidents.3') },
+  { value: 'Cancelled', text: t('form.incidents.4') },
+  { value: 'Delayed', text: t('form.incidents.5') },
+  { value: 'DeniedBoarding', text: t('form.incidents.6') },
+  { value: 'Other', text: t('form.incidents.7') },
 ]
 
 const form = reactive({
@@ -42,7 +47,7 @@ async function submit () {
 
 <template>
   <section id="form" class="form container mx-auto -mt-28 mb-16 relative z-[20] p-site pb-10 text-base">
-    <LegosCard class="max-w-[800px] ms-auto overflow-clip" edge>
+    <LegosCard class="max-w-[800px] ms-auto overflow-clip" edge animate-in>
       <h2 class="flex px-6 py-4 gap-4 font-bold border-b-2 text-md">
         <img src="../../assets/images/triangle.svg" alt="" />
         {{ $t('form.heading') }}
@@ -98,15 +103,34 @@ async function submit () {
             v-model="form.privacy"
             required
           >
-            {{ $t('form.privacy') }}
+            <div v-if="$i18n.locale === 'val'">
+              Accepte la <a href="" target="_blank">Política de privacitat</a>
+            </div>
           </InputsCheckbox>
           <InputsButton type="submit" :loading="submitting" icon="wpf:paper-plane" class="ms-auto">
-            {{ submitting ? $t('form.submitting') : $t('form.submit') }}
+            {{ $t('form.submit') }}
+
+            <template #loading>
+              {{ $t('form.submitting') }}
+            </template>
           </InputsButton>
         </div>
       </form>
-      <div v-else>
-        Submitted
+      <div v-else class="p-8 text-center">
+        <div class="text-3xl py-4">
+          <Icon name="line-md:circle-to-confirm-circle-transition" />
+        </div>
+        <p class="text-lg mb-4">
+          {{ $t('form.submitted') }}
+        </p>
+        <p class="text-base mb-8">
+          {{ $t('form.submitted_text') }}
+        </p>
+        <p class="flex justify-center">
+          <InputsButton type="submit" icon="wpf:paper-plane">
+            {{ $t('form.new') }}
+          </InputsButton>
+        </p>
       </div>
     </LegosCard>
   </section>

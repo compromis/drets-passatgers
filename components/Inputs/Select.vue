@@ -19,7 +19,7 @@ const value = defineModel()
       :name="name"
       v-model="value" 
       v-bind="$attrs"
-      class="block w-full px-4 py-3 focus:outline-none focus:bg-yellow/25"
+      class="block w-full px-4 py-3 focus:outline-none focus:bg-yellow/25 border-none focus:border-none text-base"
     >
       <option v-for="option in options" :key="option.value" :value="option.value">
         {{ option.text }}
@@ -31,6 +31,10 @@ const value = defineModel()
 <style lang="scss" scoped>
 label {
   background: var(--light-gray);
+}
+
+select:focus {
+  box-shadow: none !important;
 }
 
 .input:focus-within {

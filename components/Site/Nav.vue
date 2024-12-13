@@ -66,7 +66,7 @@ onMounted(() => {
       }
 
       &.compromis svg {
-        height: 1.8rem;
+        height: 1.6rem;
       }
 
       &-addon {

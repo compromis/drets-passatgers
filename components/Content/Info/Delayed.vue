@@ -22,19 +22,19 @@ const { t } = useI18n({
       <div class="w-full">
         <h4 class="font-bold">{{ t('over3.title') }}</h4>
         <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 mt-4">
-          <div class="bg-gray-light p-4 rounded-lg text-gray-dark text-lg text-center">
+          <div class="bg-orange/10 p-4 rounded-lg text-brown text-lg text-center">
             250€
           </div>
           <div class="text-[1rem] leading-tight">
             {{ t('over3.250') }}
           </div>
-          <div class="bg-gray-light p-4 rounded-lg text-gray-dark text-lg text-center">
+          <div class="bg-orange/10 p-4 rounded-lg text-brown text-lg text-center">
             400€
           </div>
           <div class="text-[1rem] leading-tight">
             {{ t('over3.400') }}
           </div>
-          <div class="bg-gray-light p-4 rounded-lg text-gray-dark text-lg text-center">
+          <div class="bg-orange/10 p-4 rounded-lg text-brown text-lg text-center">
             600€
           </div>
           <div class="text-[1rem] leading-tight">

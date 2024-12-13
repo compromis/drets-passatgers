@@ -5,7 +5,7 @@ const { t, tm, rt } = useI18n({
 </script>
 
 <template>
-  <section class="proposal bg-blue pt-8">
+  <section id="proposal" class="proposal bg-blue pt-8">
     <div class="container p-site text-white mb-8">
       <h2 class="font-extrabold text-xl leading-none mb-4 text-balance">{{ t('title') }}</h2>
       <p class="text-md">{{ t('text') }}</p>
@@ -15,6 +15,10 @@ const { t, tm, rt } = useI18n({
         v-for="(proposal, i) in tm('proposals')"
         :key="i"
         class="flex flex-col"
+        animate-in
+        :delay="i * 0.1"
+        trigger="#proposal"
+        start="top center"
       >
         <h3 class="font-extrabold text-lg mb-4 text-balance leading-none">{{ rt(proposal.title) }}</h3>
         <p class="text-base mt-auto">{{ rt(proposal.text) }}</p>

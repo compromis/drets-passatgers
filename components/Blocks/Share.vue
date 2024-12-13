@@ -32,10 +32,10 @@ const share = async () => {
 </script>
 
 <template>
-  <section class="bg-blue pt-24">
+  <section class="bg-gradient-to-b to-blue/0 from-blue py-24">
     <div class="container container-sm p-site text-white">
       <div class="border-2 border-white rounded-2xl overflow-clip">
-        <div class="p-site border-b-2 border-white">
+        <div class="py-site px-8 border-b-2 border-white">
           <h2 class="font-extrabold text-lg">{{ $t('share.title') }}</h2>
           <p class="text-base">{{ $t('share.text') }}</p>
         </div>

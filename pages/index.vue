@@ -34,17 +34,23 @@ onMounted(() => {
   <main class="main-site">
     <LegosBackground>
       <BlocksHero />
-      <div class="relative">
+      <div class="relative intro-container">
         <BlocksIntro class="rellax" data-rellax-speed="1.1" />
-        <AnimatedPlane />
+        <ClientOnly>
+          <AnimatedPlane />
+        </ClientOnly>
       </div>
       <div class="relative form-container">
-        <BlocksForm class="rellax" data-rellax-speed="2.2" />
-        <AnimatedPlane bis />
+        <BlocksForm class="rellax" data-rellax-speed="2" />
+        <ClientOnly>
+          <AnimatedPlane bis />
+        </ClientOnly>
       </div>
       <BlocksInfo />
       <BlocksProposal />
-      <BlocksShare />
+      <ClientOnly>
+        <BlocksShare />
+      </ClientOnly>
       <BlocksMarquee />
     </LegosBackground>
   </main>

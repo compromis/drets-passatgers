@@ -16,14 +16,13 @@ onMounted(() => {
 
   if (props.bis) {
     $gsap.to(airplane.value, {
-      x: '43vw',
+      x: '55vw',
       y: '-40vh',
-      ease: "power4.out",
-      duration: 5,
       scrollTrigger: {
         trigger: '.form-container',
-        start: 'top center',
-        markers: true
+        start: 'top bottom',
+        end: '+=2000',
+        scrub: true
       }
     })
   } else {
@@ -37,7 +36,7 @@ onMounted(() => {
 })
 
 const computedParallax = computed(() => {
-  const strength = 2
+  const strength = props.bis ? 3 : 2
   let transform = {}
   if (typeof window !== 'undefined') {
     const x = (window.innerWidth - mousePos.value.x * strength) / 100
@@ -68,7 +67,7 @@ const computedParallax = computed(() => {
 
   &.bis {
     top: auto;
-    bottom: -45vh;
+    bottom: -35vh;
     left: -50vw;
     right: auto;
     width: 42vw;
