@@ -61,16 +61,37 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    defaultLocale: 'val',
+    defaultLocale: 'eng',
     locales: [
-      { code: 'val', iso: 'ca', name: 'Valencià', file: 'val.js' },
-      { code: 'cas', iso: 'es', name: 'Castellano', file: 'cas.js' },
-      { code: 'eng', iso: 'en', name: 'English', file: 'eng.js' }
+      {
+        code: 'val',
+        iso: 'ca',
+        name: 'Valencià',
+        language: 'ca-ES',
+        file: 'val.js',
+        domain: 'dretspassatgers.com'
+      },
+      {
+        code: 'cas',
+        iso: 'es',
+        name: 'Castellano',
+        language: 'es-ES',
+        file: 'cas.js',
+        domain: 'derechospasajeros.com'
+      },
+      {
+        code: 'eng',
+        iso: 'en',
+        name: 'English',
+        language: 'en',
+        file: 'eng.js',
+        domain: 'paxrights.com'
+      }
     ],
     lazy: true,
     langDir: 'lang',
-    baseUrl: 'https://passatgersambdrets.com',
-    detectBrowserLanguage: false
+    detectBrowserLanguage: false,
+    differentDomains: (process.env.NODE_ENV === 'production')
   },
 
   vite: {

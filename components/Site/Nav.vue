@@ -1,5 +1,6 @@
 <script setup>
 const { locale, locales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
 const scrolled = ref(false)
 
 onMounted(() => {
@@ -28,13 +29,13 @@ onMounted(() => {
       </div>
       <div class="pax-languages">
         <template v-for="lang in locales" :key="lang.code">
-          <SwitchLocalePathLink
+          <a
             v-if="locale !== lang.code"
-            :locale="lang.code"
+            :href="switchLocalePath(locale.code)"
             :aria-label="$t('assist.language', { lang: lang.name })"
           >
             {{ lang.name }}
-          </SwitchLocalePathLink>
+          </a>
         </template>
       </div>
     </nav>

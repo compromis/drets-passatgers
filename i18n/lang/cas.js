@@ -15,9 +15,6 @@ export default {
     privacy_policy: 'Política de privacitat',
     loading: 'Carregant...'
   },
-  footer: {
-    campaign_by: 'és una campanya de'
-  },
   marquee: {
     questions: [
       '¿Te cancelan el vuelo y te dejan tirado?',
@@ -32,8 +29,61 @@ export default {
     cta: 'Denuncia'
   },
   hero: {
-    headline: 'Tus derechos como pasajero no son un negocio',
+    headline: 'Tus derechos como pasajerono son un negocio',
     line1: 'Tus derechos como pasajero',
     line2: 'no son un negocio'
+  },
+  form: {
+    heading: 'Denuncia',
+    fields: {
+      incident: "Tipus d'incident",
+      name: 'Nom i cognoms',
+      email: 'Email',
+      airline: 'Aerolínea',
+      flight: 'Núm. de vuelo',
+      description: 'Descripció breu'
+    },
+    incidents: [
+      "Maleta perdida",
+      "Maleta dañada",
+      "Cobros excesivos por el equipaje",
+      "No hay accesibilidad en tu vuelo",
+      "Cancelación del vuelo",
+      "Retraso de tu vuelo",
+      "Denegación de embarque",
+      "Otro"
+    ],
+    submit: 'Enviar denuncia',
+    submitting: 'Enviant...',
+    optional: 'Opcional',
+    submitted: 'Hem rebut la teua denúncia',
+    submitted_text: 'La tramitarem per tu i ens posarem en contacte amb més informació.',
+    new: 'Enviar altra denúncia'
+  },
+  info: {
+    heading: 'Conoce tus derechos',
+    delayed: {
+      heading: 'Si se retrasa tu vuelo'
+    },
+    cancelled: {
+      heading: 'Si se cancela tu vuelo'
+    },
+    denied: {
+      heading: 'Si te deniegan el embarque'
+    },
+    luggage: {
+      heading: 'Si te pierden o te dañan la maleta'
+    },
+    accessibility: {
+      heading: 'Accesibilidad movilidad reducida'
+    }
+  },
+  share: {
+    title: 'Haz difusión',
+    text: 'Comparte esta página con tus amistades.',
+    other: 'Otros...',
+    shareable_title: '',
+    shareable_image: '',
+    shareable_text: 'message'
   }
 }
