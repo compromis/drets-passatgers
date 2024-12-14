@@ -28,8 +28,8 @@ export default {
     cta: 'Denúncia'
   },
   hero: {
-    headline: 'Els teus drets com a passatgerno son un negoci',
-    line1: 'Els teus drets com a passatger',
+    headline: 'Els teus dretsno son un negoci',
+    line1: 'Els teus drets',
     line2: 'no son un negoci'
   },
   form: {

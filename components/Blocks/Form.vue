@@ -57,7 +57,7 @@ function reset () {
 </script>
 
 <template>
-  <section id="form" class="form container mx-auto -mt-28 mb-16 relative z-[20] p-site pb-10 text-base">
+  <section id="form" class="form container mx-auto md:-mt-28 mb-16 relative z-[20] p-site pb-10 text-base">
     <LegosCard class="max-w-[800px] ms-auto overflow-clip" edge animate-in>
       <h2 class="flex px-6 py-4 gap-4 font-bold border-b-2 text-md">
         <img src="../../assets/images/triangle.svg" alt="" />
@@ -79,6 +79,7 @@ function reset () {
           v-model="form.name"
           required
           :errors="errors"
+          class="col-span-2 md:col-span-1"
         />
         <InputsText
           name="email"
@@ -87,6 +88,7 @@ function reset () {
           v-model="form.email"
           required
           :errors="errors"
+          class="col-span-2 md:col-span-1"
         />
         <InputsText
           name="airline"
@@ -94,6 +96,7 @@ function reset () {
           v-model="form.airline"
           required
           :errors="errors"
+          class="col-span-2 md:col-span-1"
         />
         <InputsText
           name="flight"
@@ -101,6 +104,7 @@ function reset () {
           v-model="form.flight"
           required
           :errors="errors"
+          class="col-span-2 md:col-span-1"
         />
         <InputsTextarea
           name="description"
@@ -109,13 +113,19 @@ function reset () {
           :errors="errors"
           class="col-span-2"
         />
-        <div class="col-span-2 bg-white flex p-4 items-center gap-4">
+        <div class="col-span-2 bg-white flex flex-col md:flex-row p-4 md:items-center gap-4">
           <InputsCheckbox
             v-model="form.privacy"
             required
           >
             <div v-if="$i18n.locale === 'val'">
-              Accepte la <a href="" target="_blank">Política de privacitat</a>
+              Accepte la <a href="https://compromis.net/avis-legal" target="_blank">Política de privacitat</a>
+            </div>
+            <div v-if="$i18n.locale === 'cas'">
+              Acepto la <a href="https://compromis.net/avis-legal" target="_blank">Política de privacidad</a>
+            </div>
+            <div v-if="$i18n.locale === 'eng'">
+              I accept the <a href="https://compromis.net/avis-legal" target="_blank">Privacy Policy</a>
             </div>
           </InputsCheckbox>
           <InputsButton type="submit" :loading="submitting" icon="wpf:paper-plane" class="ms-auto">

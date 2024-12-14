@@ -26,22 +26,22 @@ useServerSeoMeta({
 useHead({ title })
 
 onMounted(() => {
-  const rellax = new Rellax('.rellax')
+  const rellax = new Rellax('.rellax', { breakpoints: [576, 768, 1201] })
 })
 </script>
 
 <template>
-  <main class="main-site">
+  <main class="main-site overflow-clip">
     <LegosBackground>
       <BlocksHero />
       <div class="relative intro-container">
-        <BlocksIntro class="rellax" data-rellax-speed="1.1" />
+        <BlocksIntro class="rellax" data-rellax-speed="1" data-rellax-desktop-speed="1.1" />
         <ClientOnly>
-          <AnimatedPlane />
+          <AnimatedPlane class="hidden md:block" />
         </ClientOnly>
       </div>
       <div class="relative form-container">
-        <BlocksForm class="rellax" data-rellax-speed="2.1" />
+        <BlocksForm class="rellax" data-rellax-speed="1.9" data-rellax-desktop-speed="2.1" />
         <ClientOnly>
           <AnimatedPlane bis />
         </ClientOnly>

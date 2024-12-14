@@ -28,8 +28,8 @@ export default {
     cta: 'Denunciar'
   },
   hero: {
-    headline: 'Tus derechos como pasajerono son un negocio',
-    line1: 'Tus derechos como pasajero',
+    headline: 'Tus derechosno son un negocio',
+    line1: 'Tus derechos',
     line2: 'no son un negocio'
   },
   form: {

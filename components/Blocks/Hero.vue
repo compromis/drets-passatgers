@@ -112,7 +112,7 @@ onMounted(() => {
   }
 
   .letter {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .letter::before,
@@ -187,5 +187,19 @@ onMounted(() => {
       100% 100%,
       0 100%
     );
+  }
+
+  @include media('<md') {
+    .hero-panel {
+      padding: var(--spacer-4) var(--spacer-4) var(--spacer-8);
+    }
+
+    .icon {
+      font-size: 2.5rem;
+    }
+
+    .letter {
+      font-size: 2.25rem;
+    }
   }
 </style>

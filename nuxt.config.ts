@@ -90,8 +90,9 @@ export default defineNuxtConfig({
     ],
     lazy: true,
     langDir: 'lang',
+    baseUrl: 'https://dretspassatgers.com',
     detectBrowserLanguage: false,
-    differentDomains: true,
+    differentDomains: (process.env.NODE_ENV === 'production'),
     strategy: 'prefix_except_default'
   },
 

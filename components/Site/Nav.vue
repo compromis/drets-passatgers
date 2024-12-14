@@ -16,7 +16,7 @@ onMounted(() => {
 <template>
   <header class="pax-header">
     <nav :class="['pax-nav', { scrolled }]">
-      <div class="flex gap-site">
+      <div class="flex gap-site w-full md:w-auto justify-between">
         <a href="https://compromis.net" :aria-label="$t('assist.logo')" class="logo compromis">
           <SiteLogo />
         </a>
@@ -27,7 +27,7 @@ onMounted(() => {
           <SiteVicentMarza />
         </a>
       </div>
-      <div class="pax-languages">
+      <div class="pax-languages hidden md:flex">
         <template v-for="lang in locales" :key="lang.code">
           <a
             v-if="locale !== lang.code"
@@ -70,15 +70,10 @@ onMounted(() => {
       &.compromis svg {
         height: 1.6rem;
       }
-
-      &-addon {
-        font-size: 1.25rem;
-      }
     }
   }
 
   &-languages {
-    display: flex;
     gap: var(--site-padding);
 
     :deep(a) {
@@ -111,14 +106,16 @@ onMounted(() => {
 @include media('<md') {
   .pax {
     &-nav {
-      transition: background .25s ease;
+      position: relative;
 
-      .logo-addon {
-        display: none;
-      }
+      .logo {
+        svg {
+          height: 1.75rem;
+        }
 
-      &.scrolled {
-        background: var(--green);
+        &.compromis svg {
+          height: 1.25rem;
+        }
       }
     }
   }

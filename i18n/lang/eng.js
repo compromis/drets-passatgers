@@ -29,9 +29,9 @@ export default {
     cta: 'Denuncia'
   },
   hero: {
-    headline: 'Tus derechos como pasajerono son un negocio',
-    line1: 'Tus derechos como pasajero',
-    line2: 'no son un negocio'
+    headline: 'Your rights arenot negotiable',
+    line1: 'Your rights are',
+    line2: 'not negotiable'
   },
   form: {
     heading: 'Denuncia',

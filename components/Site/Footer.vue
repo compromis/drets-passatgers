@@ -1,6 +1,6 @@
 <template>
   <footer class="footer relative z-[5] bg-gradient-to-b from-blue/0 to-blue pt-24">
-    <div class="p-site mx-auto min-h-[7rem] flex items-end gap-4 text-white">
+    <div class="p-site md:mx-auto min-h-[7rem] flex flex-col md:flex-row md:items-end gap-4 text-white">
       <div class="text-balance">
         <div class="flex gap-4 items-center mb-4">
           <a href="https://compromis.net" aria-label="Compromís" class="logo compromis">
@@ -12,7 +12,7 @@
           <a href="https://europarl.compromis.net" aria-label="Oficina Vicent Marzà" class="logo marza">
             <SiteVicentMarza class="h-[1.75rem]"  />
           </a>
-      </div>
+        </div>
         <p v-if="$i18n.locale === 'val'">
           <strong>PasajerosConDerechos.com</strong> es una campaña de <strong>Greens/EFA</strong> en coordinación con la <strong>Oficina Parlamentaria de Vicent Marzà en el Parlamento Europeo</strong>
         </p>

@@ -39,14 +39,14 @@ const share = async () => {
           <h2 class="font-extrabold text-lg">{{ $t('share.title') }}</h2>
           <p class="text-base">{{ $t('share.text') }}</p>
         </div>
-        <div class="buttons grid grid-cols-2">
-          <a :href="`https://wa.me/?text=${urlAndText}`" class="border-r-2 border-b-2 border-white">
+        <div class="buttons grid md:grid-cols-2">
+          <a :href="`https://wa.me/?text=${urlAndText}`" class="md:border-r-2 border-b-2 border-white">
             <span>-&gt;</span> WhatsApp
           </a>
           <a :href="`https://t.me/share/url?url=${urlAndText}`" class="border-b-2 border-white">
             <span>-&gt;</span> Telegram
           </a>
-          <a :href="`https://x.com/intent/post/?text=${text}&url=${url}.com&hashtags=`" class="border-r-2 border-white">
+          <a :href="`https://x.com/intent/post/?text=${text}&url=${url}.com&hashtags=`" class="md:border-r-2 border-b-2 md:border-b-0 border-white">
             <span>-&gt;</span> X / Twitter
           </a>
           <a v-if="canShare" href="#" @click.prevent="share">
@@ -81,6 +81,7 @@ const share = async () => {
   &:hover {
     background: var(--white);
     color: var(--blue);
+    text-decoration: none;
 
     span {
       max-width: 2em;

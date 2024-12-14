@@ -30,7 +30,7 @@ onMounted(() => {
       class="page-background"
       :style="{ backgroundImage: `url(${backgroundImage})` }"
     />
-    <div class="relative z-10 pt-safe-area">
+    <div class="relative z-10 pt-4 md:pt-safe-area">
       <slot />
     </div>
   </div>

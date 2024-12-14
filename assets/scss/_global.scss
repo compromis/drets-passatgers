@@ -20,6 +20,10 @@ body {
 
 a {
   color: var(--orange);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 *:focus-visible {

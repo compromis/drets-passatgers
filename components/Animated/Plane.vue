@@ -5,6 +5,7 @@ const props = defineProps({
 
 const { $gsap } = useNuxtApp()
 const airplane = ref(null)
+const airplaneInner = ref(null)
 
 const mousePos = useState('mousePos', () => ({ x: 0, y: 0 }))
 const setMousePos = ({ pageX, pageY }) => {
@@ -15,22 +16,42 @@ onMounted(() => {
   document.addEventListener('mousemove', setMousePos)
 
   if (props.bis) {
-    $gsap.to(airplane.value, {
-      x: '55vw',
-      y: '-40vh',
-      scrollTrigger: {
-        trigger: '.form-container',
-        start: 'top bottom',
-        end: '+=2000',
-        scrub: true
-      }
+    const mm = $gsap.matchMedia()
+
+    mm.add({
+      isDesktop: `(min-width: 768px)`,
+      isMobile: `(max-width: 767px)`,
+    }, (context) => {
+      const { isDesktop } = context.conditions
+      $gsap.to(airplane.value, {
+        x: isDesktop ? '55vw' : '80vw',
+        y: '-40vh',
+        scrollTrigger: {
+          trigger: '.form-container',
+          start: 'top bottom',
+          end: '+=2000',
+          scrub: true
+        }
+      })
     })
   } else {
     $gsap.from(airplane.value, {
       x: '-100vw',
       y: '100vh',
       ease: "power4.out",
-      duration: 5,
+      duration: 5
+    })
+
+    $gsap.to(airplaneInner.value, {
+      x: '100vw',
+      y: '-100vh',
+      ease: "power1.in",
+      scrollTrigger: {
+        trigger: '.intro-container',
+        start: 'top center',
+        end: '+=1500',
+        scrub: true
+      }
     })
   }
 })
@@ -50,7 +71,9 @@ const computedParallax = computed(() => {
 
 <template>
   <div ref="airplane" :class="['airplane', { bis }]">
-    <img src="../../assets/images/airplane.png" alt="Airplane" :style="computedParallax" />
+    <div ref="airplaneInner">
+      <img src="../../assets/images/airplane.png" alt="Airplane" :style="computedParallax" />
+    </div>
   </div>
 </template>
 
@@ -71,6 +94,13 @@ const computedParallax = computed(() => {
     left: -50vw;
     right: auto;
     width: 42vw;
+  }
+}
+
+@include media('<md') {
+  .airplane.bis {
+    width: 80vw;
+    left: -60vw;
   }
 }
 </style>
