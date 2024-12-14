@@ -31,8 +31,9 @@ onMounted(() => {
         <template v-for="lang in locales" :key="lang.code">
           <a
             v-if="locale !== lang.code"
-            :href="switchLocalePath(locale.code)"
+            :href="switchLocalePath(lang.code)"
             :aria-label="$t('assist.language', { lang: lang.name })"
+            :key="lang.code"
           >
             {{ lang.name }}
           </a>

@@ -3,13 +3,12 @@ export default {
     logo: 'Anar a la web de Compromís',
     language: 'Canviar idioma a {lang}',
     close: 'Tanca',
-    clear_picture: 'Esborra foto'
   },
   meta: {
-    title: 'Que no te tiren - Compromis',
-    description: 'Mapa d’apartaments turístics il·legals en {city}',
-    keywords: 'alquiler, lloguer, valencia, alacant, apartaments, turistics, denuncia, mapa',
-    image: 'https://quenotetiren.com/images/og_val.jpg'
+    title: 'Els teus drets com a passatger no son un negoci - Greens/EFA - Compromís',
+    description: 'Les aerolínies guanyen milions ignorant els teus drets. Retards, cancel·lacions i abusos són part del seu model de negoci, mentre tu perds.',
+    keywords: 'drets, passatgers, vol retardat, vol cancel·lat, maleta perduda, maleta danyada, vol amb retard',
+    image: 'https://dretspassatgers.com/images/og_val.jpg'
   },
   global: {
     privacy_policy: 'Política de privacitat',
@@ -17,24 +16,24 @@ export default {
   },
   marquee: {
     questions: [
-      '¿Te cancelan el vuelo y te dejan tirado?',
-      '¿Vuelo retrasado y nadie te informa?',
-      '¿Perdieron tu maleta y no te devuelven el dinero?',
-      '¿Te dejan esperando en el aeropuerto sin soluciones?',
-      '¿Cancelan tu vuelo y no te dan alternativas?',
-      '¿Te venden un billete, te dejan tirado y no te reembolsan?',
-      '¿Te dicen que no pueden hacer nada?',
-      '¿Te cobran de más por una maleta de mano?',
+      'Et cancel·len el vol i et deixen tirat?',
+      'Vol amb retard i ningú no t\'informa?',
+      'Han perdut la teua maleta i no et retornen els diners?',
+      'Et deixen esperant a l\'aeroport sense solucions?',
+      'Cancel·len el teu vol i no et donen alternatives?',
+      'Et venen un bitllet, et deixen tirat i no et reembolsen?',
+      'Et diuen que no poden fer res?',
+      'Et cobren de més per una maleta de ma?',
     ],
-    cta: 'Denuncia'
+    cta: 'Denúncia'
   },
   hero: {
-    headline: 'Tus derechos como pasajerono son un negocio',
-    line1: 'Tus derechos como pasajero',
-    line2: 'no son un negocio'
+    headline: 'Els teus drets com a passatgerno son un negoci',
+    line1: 'Els teus drets com a passatger',
+    line2: 'no son un negoci'
   },
   form: {
-    heading: 'Denuncia',
+    heading: 'Denúncia',
     fields: {
       incident: "Tipus d'incident",
       name: 'Nom i cognoms',
@@ -44,16 +43,16 @@ export default {
       description: 'Descripció breu'
     },
     incidents: [
-      "Maleta perdida",
-      "Maleta dañada",
-      "Cobros excesivos por el equipaje",
-      "No hay accesibilidad en tu vuelo",
-      "Cancelación del vuelo",
-      "Retraso de tu vuelo",
-      "Denegación de embarque",
-      "Otro"
+      "Maleta perduda",
+      "Maleta danyada",
+      "Cobrament execessiu per l'equipatge",
+      "Falta d'accessibilitat al vol",
+      "Cancel·lació del vol",
+      "Retard del teu vol",
+      "Denegació d'embarcament",
+      "Altre"
     ],
-    submit: 'Enviar denuncia',
+    submit: 'Enviar denúncia',
     submitting: 'Enviant...',
     optional: 'Opcional',
     submitted: 'Hem rebut la teua denúncia',
@@ -61,7 +60,7 @@ export default {
     new: 'Enviar altra denúncia'
   },
   info: {
-    heading: 'Conoce tus derechos',
+    heading: 'Coneix els teus drets',
     delayed: {
       heading: 'Si se retrasa tu vuelo'
     },

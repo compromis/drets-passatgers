@@ -91,7 +91,8 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'lang',
     detectBrowserLanguage: false,
-    differentDomains: (process.env.NODE_ENV === 'production')
+    differentDomains: true,
+    strategy: 'prefix_except_default'
   },
 
   vite: {

@@ -1,19 +1,18 @@
 export default {
   assist: {
-    logo: 'Anar a la web de Compromís',
-    language: 'Canviar idioma a {lang}',
-    close: 'Tanca',
-    clear_picture: 'Esborra foto'
+    logo: 'Ir a la web de Compromís',
+    language: 'Cambiar idioma a {lang}',
+    close: 'Cerrar'
   },
   meta: {
-    title: 'Que no te tiren - Compromis',
-    description: 'Mapa d’apartaments turístics il·legals en {city}',
-    keywords: 'alquiler, lloguer, valencia, alacant, apartaments, turistics, denuncia, mapa',
-    image: 'https://quenotetiren.com/images/og_val.jpg'
+    title: 'Tus derechos como pasajero no son un negocio - Greens/EFA - Compromís',
+    description: '¿Sabías que como pasajero en la Unión Europea ya tienes derechos claros y protegidos por ley?',
+    keywords: 'derechos, pasajeros, vuelo retrasado, vuelo cancelado, maleta perdida, maleta dañada, vuelo retrasado',
+    image: 'https://derechospasajeros.com/images/og_val.jpg'
   },
   global: {
-    privacy_policy: 'Política de privacitat',
-    loading: 'Carregant...'
+    privacy_policy: 'Política de privacidad',
+    loading: 'Cargando...'
   },
   marquee: {
     questions: [
@@ -26,7 +25,7 @@ export default {
       '¿Te dicen que no pueden hacer nada?',
       '¿Te cobran de más por una maleta de mano?',
     ],
-    cta: 'Denuncia'
+    cta: 'Denunciar'
   },
   hero: {
     headline: 'Tus derechos como pasajerono son un negocio',
@@ -36,12 +35,12 @@ export default {
   form: {
     heading: 'Denuncia',
     fields: {
-      incident: "Tipus d'incident",
-      name: 'Nom i cognoms',
+      incident: "Tipo de incidente",
+      name: 'Nombre y apellidos',
       email: 'Email',
       airline: 'Aerolínea',
       flight: 'Núm. de vuelo',
-      description: 'Descripció breu'
+      description: 'Descripción breve'
     },
     incidents: [
       "Maleta perdida",
@@ -54,11 +53,11 @@ export default {
       "Otro"
     ],
     submit: 'Enviar denuncia',
-    submitting: 'Enviant...',
+    submitting: 'Enviando...',
     optional: 'Opcional',
-    submitted: 'Hem rebut la teua denúncia',
-    submitted_text: 'La tramitarem per tu i ens posarem en contacte amb més informació.',
-    new: 'Enviar altra denúncia'
+    submitted: 'Hemos recibido tu denuncia',
+    submitted_text: 'La tramitaremos por ti y nos pondremos en contacto con más información.',
+    new: 'Enviar otra denuncia'
   },
   info: {
     heading: 'Conoce tus derechos',

@@ -50,8 +50,8 @@ onMounted(() => {
       <BlocksProposal />
       <ClientOnly>
         <BlocksShare />
+        <BlocksMarquee />
       </ClientOnly>
-      <BlocksMarquee />
     </LegosBackground>
   </main>
 </template>
