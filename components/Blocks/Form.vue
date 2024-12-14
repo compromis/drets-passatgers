@@ -3,13 +3,13 @@ const config = useRuntimeConfig()
 const { t, locale } = useI18n()
 
 const incidentOptions = [
-  { value: 'LostLuggage', text: t('form.incidents.0') },
-  { value: 'DamangedLuggage', text: t('form.incidents.1') },
-  { value: 'PaidCarryOn', text: t('form.incidents.2') },
+  { value: 'Lost luggage', text: t('form.incidents.0') },
+  { value: 'Damaged luggage', text: t('form.incidents.1') },
+  { value: 'Excessive baggage charges', text: t('form.incidents.2') },
   { value: 'Accessibility', text: t('form.incidents.3') },
-  { value: 'Cancelled', text: t('form.incidents.4') },
-  { value: 'Delayed', text: t('form.incidents.5') },
-  { value: 'DeniedBoarding', text: t('form.incidents.6') },
+  { value: 'Flight cancellation', text: t('form.incidents.4') },
+  { value: 'Flight delay', text: t('form.incidents.5') },
+  { value: 'Denied boarding', text: t('form.incidents.6') },
   { value: 'Other', text: t('form.incidents.7') },
 ]
 
@@ -42,6 +42,17 @@ async function submit () {
   } finally {
     submitting.value = false
   }
+}
+
+function reset () {
+  submitted.value = false
+  form.incident = ''
+  form.name = ''
+  form.email = ''
+  form.airline = ''
+  form.flight = ''
+  form.description = ''
+  form.privacy = false
 }
 </script>
 
@@ -127,7 +138,7 @@ async function submit () {
           {{ $t('form.submitted_text') }}
         </p>
         <p class="flex justify-center">
-          <InputsButton type="submit" icon="wpf:paper-plane">
+          <InputsButton type="submit" icon="wpf:paper-plane" @click="reset">
             {{ $t('form.new') }}
           </InputsButton>
         </p>

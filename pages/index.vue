@@ -41,7 +41,7 @@ onMounted(() => {
         </ClientOnly>
       </div>
       <div class="relative form-container">
-        <BlocksForm class="rellax" data-rellax-speed="2" />
+        <BlocksForm class="rellax" data-rellax-speed="2.3" />
         <ClientOnly>
           <AnimatedPlane bis />
         </ClientOnly>

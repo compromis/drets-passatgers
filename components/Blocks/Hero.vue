@@ -112,7 +112,7 @@ onMounted(() => {
   }
 
   .letter {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .letter::before,
