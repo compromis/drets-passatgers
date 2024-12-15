@@ -6,22 +6,13 @@
   <div class="intro pt-10 container mx-auto p-site">
     <LegosCard class="max-w-[800px] text-base">      
       <div v-if="$i18n.locale === 'val'">
-        <h2 class="intro-title">
-          ¿Sabías que como pasajero en la Unión Europea ya tienes derechos claros y protegidos por ley?
-        </h2>
-        <p>Las aerolíneas ganan millones ignorando tus derechos. Retrasos, cancelaciones y abusos son parte de su modelo de negocio, mientras tú pierdes. No se trata solo de hacer cumplir las normas, sino de ampliarlas para proteger mejor a los pasajeros. ¡Es hora de poner fin a este abuso y luchar por derechos más fuertes y justos!</p>
+        <p>Les aerolínies guanyen milions ignorant els teus drets. Retards, cancel·lacions i abusos són part del seu model de negoci, mentre tu perds. No es tracta només de fer complir les normes, sinó d'ampliar-les per protegir millor els passatgers. És hora de posar fi a aquest abús i lluitar per drets més forts i justos!</p>
       </div>
       <div v-if="$i18n.locale === 'cas'">
-        <h2 class="intro-title">
-          ¿Sabías que como pasajero en la Unión Europea ya tienes derechos claros y protegidos por ley?
-        </h2>
         <p>Las aerolíneas ganan millones ignorando tus derechos. Retrasos, cancelaciones y abusos son parte de su modelo de negocio, mientras tú pierdes. No se trata solo de hacer cumplir las normas, sino de ampliarlas para proteger mejor a los pasajeros. ¡Es hora de poner fin a este abuso y luchar por derechos más fuertes y justos!</p>
       </div>
       <div v-if="$i18n.locale === 'eng'">
-        <h2 class="intro-title">
-          ¿Sabías que como pasajero en la Unión Europea ya tienes derechos claros y protegidos por ley?
-        </h2>
-        <p>Las aerolíneas ganan millones ignorando tus derechos. Retrasos, cancelaciones y abusos son parte de su modelo de negocio, mientras tú pierdes. No se trata solo de hacer cumplir las normas, sino de ampliarlas para proteger mejor a los pasajeros. ¡Es hora de poner fin a este abuso y luchar por derechos más fuertes y justos!</p>
+        <p>Airlines make millions by ignoring your rights. Delays, cancellations, and abuse are part of their business model, while you lose out. It's not just about enforcing the rules; it's about expanding them to better protect passengers. It's time to put an end to this abuse and fight for stronger, fairer rights!</p>
       </div>
       <div class="text-gray whitespace-nowrap overflow-clip text-md leading-none mt-8" aria-hidden="true">
         <span v-for="i in 40" :key="i" class="mx-1">&gt;</span>

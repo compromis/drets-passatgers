@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         lang: 'ca',
       },
       meta: [
-        { name: 'theme-color', content: '#006E50' },
+        { name: 'theme-color', content: '#1968A9' },
       ],
       link: [
         {
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         }
       ],
       script: [
-        { src: 'https://cloud.umami.is/script.js', defer: true, 'data-website-id': 'e5c0625b-91b6-48d7-b015-28833271172c' },
+        { src: 'https://cloud.umami.is/script.js', defer: true, 'data-website-id': '211bc8de-e22a-4911-aeb7-e0201b95e8ae' },
       ]
     }
   },

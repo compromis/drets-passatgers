@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps({
   edge: { type: Boolean, default: false },
-  animateIn: { type: Boolean, default: false },
+  animate: { type: Boolean, default: false },
   delay: { type: Number, default: 0 },
   trigger: { type: String, default: null },
   start: { type: String, default: 'top 90%' }
@@ -11,7 +11,7 @@ const { $gsap } = useNuxtApp()
 const card = ref(null)
 
 onMounted(() => {
-  if (props.animateIn) {
+  if (props.animate) {
     $gsap.to(card.value, {
       y: 0,
       opacity: 1,
@@ -29,7 +29,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <article ref="card" :class="['card bg-white border-2 rounded-xl', { 'p-8': !edge, animate: animateIn }]">
+  <article
+    ref="card"
+    :class="[
+      'card bg-white border-2 rounded-xl',
+      {
+        'p-8': !edge,
+        animate
+      }
+    ]"
+  >
     <slot />
   </article>
 </template>

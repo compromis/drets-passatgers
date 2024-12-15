@@ -43,14 +43,14 @@ export default {
       description: 'Descripció breu'
     },
     incidents: [
-      "Maleta perduda",
-      "Maleta danyada",
-      "Cobrament execessiu per l'equipatge",
-      "Falta d'accessibilitat al vol",
-      "Cancel·lació del vol",
-      "Retard del teu vol",
-      "Denegació d'embarcament",
-      "Altre"
+      "🧳 Maleta perduda",
+      "🧳 Maleta danyada",
+      "🧳 Cobrament execessiu per l'equipatge",
+      "♿️ Falta d'accesibilitat al teu vol",
+      "🚫 Cancel·lació del vol",
+      "🕘 Retard del teu vol",
+      "💺 Denegació d'embarcament",
+      "🛫 Altre"
     ],
     submit: 'Enviar denúncia',
     submitting: 'Enviant...',
@@ -62,25 +62,25 @@ export default {
   info: {
     heading: 'Coneix els teus drets',
     delayed: {
-      heading: 'Si se retrasa tu vuelo'
+      heading: 'En Cas de Retard'
     },
     cancelled: {
-      heading: 'Si se cancela tu vuelo'
+      heading: 'Si el teu Vol és Cancel·lat'
     },
     denied: {
-      heading: 'Si te deniegan el embarque'
+      heading: 'Si Et Deneguen l\'Embarcament'
     },
     luggage: {
-      heading: 'Si te pierden o te dañan la maleta'
+      heading: 'Problemes amb l\'Equipatge'
     },
     accessibility: {
-      heading: 'Accesibilidad movilidad reducida'
+      heading: 'Accessibilitat mobilitat reduïda'
     }
   },
   share: {
-    title: 'Haz difusión',
-    text: 'Comparte esta página con tus amistades.',
-    other: 'Otros...',
+    title: 'Fes difusió',
+    text: 'Comparteix aquesta pàgina amb les teues amistats.',
+    other: 'Altres...',
     shareable_title: '',
     shareable_image: '',
     shareable_text: 'message'

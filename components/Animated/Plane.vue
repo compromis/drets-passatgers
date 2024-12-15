@@ -80,7 +80,7 @@ const computedParallax = computed(() => {
 <style lang="scss" scoped>
 .airplane {
   position: absolute;
-  top: 4rem;
+  top: -1rem;
   right: 4rem;
   width: 35vw;
 

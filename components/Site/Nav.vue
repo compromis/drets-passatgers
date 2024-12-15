@@ -27,17 +27,17 @@ onMounted(() => {
           <SiteVicentMarza />
         </a>
       </div>
-      <div class="pax-languages hidden md:flex">
-        <template v-for="lang in locales" :key="lang.code">
-          <a
-            v-if="locale !== lang.code"
-            :href="switchLocalePath(lang.code)"
-            :aria-label="$t('assist.language', { lang: lang.name })"
-            :key="lang.code"
-          >
-            {{ lang.name }}
-          </a>
-        </template>
+      <div class="pax-languages flex">
+        <a
+          v-for="lang in locales"
+          :key="lang.code"
+          :href="switchLocalePath(lang.code)"
+          :aria-label="$t('assist.language', { lang: lang.name })"
+          :class="{ 'current': locale === lang.code }"
+          :aria-current="locale === lang.code ? 'page' : null"
+        >
+          {{ lang.name }}
+        </a>
       </div>
     </nav>
   </header>
@@ -75,6 +75,7 @@ onMounted(() => {
 
   &-languages {
     gap: var(--site-padding);
+    margin-top: var(--spacer-4);
 
     :deep(a) {
       color: var(--white);
@@ -84,6 +85,10 @@ onMounted(() => {
       &:hover {
         text-decoration: underline;
         text-underline-offset: 4px;
+      }
+
+      &.current {
+        font-weight: 900;
       }
     }
   }
@@ -107,6 +112,7 @@ onMounted(() => {
   .pax {
     &-nav {
       position: relative;
+      flex-direction: column;
 
       .logo {
         svg {

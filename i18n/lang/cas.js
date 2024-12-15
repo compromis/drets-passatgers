@@ -6,7 +6,7 @@ export default {
   },
   meta: {
     title: 'Tus derechos como pasajero no son un negocio - Greens/EFA - Compromís',
-    description: '¿Sabías que como pasajero en la Unión Europea ya tienes derechos claros y protegidos por ley?',
+    description: 'Las aerolíneas ganan millones ignorando tus derechos. Retrasos, cancelaciones y abusos son parte de su modelo de negocio, mientras tú pierdes.',
     keywords: 'derechos, pasajeros, vuelo retrasado, vuelo cancelado, maleta perdida, maleta dañada, vuelo retrasado',
     image: 'https://derechospasajeros.com/images/og_val.jpg'
   },
@@ -43,14 +43,14 @@ export default {
       description: 'Descripción breve'
     },
     incidents: [
-      "Maleta perdida",
-      "Maleta dañada",
-      "Cobros excesivos por el equipaje",
-      "No hay accesibilidad en tu vuelo",
-      "Cancelación del vuelo",
-      "Retraso de tu vuelo",
-      "Denegación de embarque",
-      "Otro"
+      "🧳 Maleta perdida",
+      "🧳 Maleta dañada",
+      "🧳 Cobros excesivos por el equipaje",
+      "♿️ No hay accesibilidad en tu vuelo",
+      "🚫 Cancelación del vuelo",
+      "🕘 Retraso de tu vuelo",
+      "💺 Denegación de embarque",
+      "🛫 Otro"
     ],
     submit: 'Enviar denuncia',
     submitting: 'Enviando...',

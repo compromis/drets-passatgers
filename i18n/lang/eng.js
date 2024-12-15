@@ -1,32 +1,30 @@
 export default {
   assist: {
-    logo: 'Anar a la web de Compromís',
-    language: 'Canviar idioma a {lang}',
-    close: 'Tanca',
-    clear_picture: 'Esborra foto'
+    logo: 'Go to Compromís\' website',
+    language: 'Change language to {lang}',
+    close: 'Close',
   },
   meta: {
-    title: 'Que no te tiren - Compromis',
-    description: 'Mapa d’apartaments turístics il·legals en {city}',
-    keywords: 'alquiler, lloguer, valencia, alacant, apartaments, turistics, denuncia, mapa',
+    title: 'Your rights as a passenger are not negotiable - Greens/EFA - Compromís',
+    description: 'Airlines make millions by ignoring your rights. Delays, cancellations, and abuse are part of their business model, while you lose out',
+    keywords: 'rights, passenger, delayed flight, cancelled flight, lost luggage, damaged luggage, accessibility airport',
     image: 'https://quenotetiren.com/images/og_val.jpg'
   },
   global: {
-    privacy_policy: 'Política de privacitat',
-    loading: 'Carregant...'
+    privacy_policy: 'Privacy Policy',
+    loading: 'Loading...'
   },
   marquee: {
     questions: [
-      '¿Te cancelan el vuelo y te dejan tirado?',
-      '¿Vuelo retrasado y nadie te informa?',
-      '¿Perdieron tu maleta y no te devuelven el dinero?',
-      '¿Te dejan esperando en el aeropuerto sin soluciones?',
-      '¿Cancelan tu vuelo y no te dan alternativas?',
-      '¿Te venden un billete, te dejan tirado y no te reembolsan?',
-      '¿Te dicen que no pueden hacer nada?',
-      '¿Te cobran de más por una maleta de mano?',
+      'Flight is cancelled and you\'re left stranded?',
+      'Flight is delayed and no one informs you?',
+      'Your luggage is lost and you are not compensated?',
+      'You\'re left lying around at the airport with no solutions?',
+      'Flight is cancelled with no alternatives?',
+      'They tell you they can\'t do anything?',
+      'You\'ve been overcharged for your luggage?',
     ],
-    cta: 'Denuncia'
+    cta: 'Report'
   },
   hero: {
     headline: 'Your rights arenot negotiable',
@@ -34,54 +32,54 @@ export default {
     line2: 'not negotiable'
   },
   form: {
-    heading: 'Denuncia',
+    heading: 'Report your complaint',
     fields: {
-      incident: "Tipus d'incident",
-      name: 'Nom i cognoms',
+      incident: "Type of incident",
+      name: 'Name and surname',
       email: 'Email',
-      airline: 'Aerolínea',
-      flight: 'Núm. de vuelo',
-      description: 'Descripció breu'
+      airline: 'Airline',
+      flight: 'Flight number',
+      description: 'Short description'
     },
     incidents: [
-      "Maleta perdida",
-      "Maleta dañada",
-      "Cobros excesivos por el equipaje",
-      "No hay accesibilidad en tu vuelo",
-      "Cancelación del vuelo",
-      "Retraso de tu vuelo",
-      "Denegación de embarque",
-      "Otro"
+      "🧳 Lost luggage",
+      "🧳 Damaged luggage",
+      "🧳 Excessive baggage charges",
+      "♿️ No accessibility on your flight",
+      "🚫 Flight cancellation",
+      "🕘 Flight delay",
+      "💺 Denied boarding",
+      "🛫 Other"
     ],
-    submit: 'Enviar denuncia',
-    submitting: 'Enviant...',
-    optional: 'Opcional',
-    submitted: 'Hem rebut la teua denúncia',
+    submit: 'Submit complaint',
+    submitting: 'Submitting...',
+    optional: 'Optional',
+    submitted: 'We have received your complaint',
     submitted_text: 'La tramitarem per tu i ens posarem en contacte amb més informació.',
-    new: 'Enviar altra denúncia'
+    new: 'Send another complaint'
   },
   info: {
-    heading: 'Conoce tus derechos',
+    heading: 'Know your rights',
     delayed: {
-      heading: 'Si se retrasa tu vuelo'
+      heading: 'If your flight is delayed'
     },
     cancelled: {
-      heading: 'Si se cancela tu vuelo'
+      heading: 'If your flight is cancelled'
     },
     denied: {
-      heading: 'Si te deniegan el embarque'
+      heading: 'If you are denied boarding'
     },
     luggage: {
-      heading: 'Si te pierden o te dañan la maleta'
+      heading: 'Problems with baggage'
     },
     accessibility: {
-      heading: 'Accesibilidad movilidad reducida'
+      heading: 'Accessibility & Reduced mobility'
     }
   },
   share: {
-    title: 'Haz difusión',
-    text: 'Comparte esta página con tus amistades.',
-    other: 'Otros...',
+    title: 'Share this page',
+    text: 'Share this page with your friends',
+    other: 'Other...',
     shareable_title: '',
     shareable_image: '',
     shareable_text: 'message'
