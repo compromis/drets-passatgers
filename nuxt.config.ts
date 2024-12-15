@@ -10,11 +10,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'ca',
-      },
       meta: [
-        { name: 'theme-color', content: '#1968A9' },
+        { name: 'theme-color', content: '#02111b' },
       ],
       link: [
         {

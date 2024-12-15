@@ -14,13 +14,13 @@
           </a>
         </div>
         <p v-if="$i18n.locale === 'val'">
-          <strong>PasajerosConDerechos.com</strong> és una campanya de <strong>Verds/ALE</strong> en coordinació amb l'<strong>Oficina Parlamentària de Vicent Marzà al Parlamento Europeo</strong>
+          <strong>DretsPassatgers.com</strong> és una campanya de <strong>Verds/ALE</strong> en coordinació amb l'<strong>Oficina Parlamentària de Vicent Marzà al Parlamento Europeo</strong>
         </p>
         <p v-if="$i18n.locale === 'cas'">
-          <strong>PasajerosConDerechos.com</strong> es una campaña de <strong>Greens/EFA</strong> en coordinación con la <strong>Oficina Parlamentaria de Vicent Marzà en el Parlamento Europeo</strong>
+          <strong>DerechosPasajeros.com</strong> es una campaña de <strong>Greens/EFA</strong> en coordinación con la <strong>Oficina Parlamentaria de Vicent Marzà en el Parlamento Europeo</strong>
         </p>
         <p v-if="$i18n.locale === 'eng'">
-          <strong>PasajerosConDerechos.com</strong> is a campaign by <strong>Greens/EFA</strong> in coordination with the <strong>Parliamentary Office of Vicent Marzà in the European Parliament</strong>
+          <strong>*.com</strong> is a campaign by <strong>Greens/EFA</strong> in coordination with the <strong>Parliamentary Office of Vicent Marzà in the European Parliament</strong>
         </p>
       </div>
       <div class="text-nowrap flex gap-4">
