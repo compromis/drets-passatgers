@@ -23,7 +23,7 @@
           <strong>*.com</strong> is a campaign by <strong>Greens/EFA</strong> in coordination with the <strong>Parliamentary Office of Vicent Marzà in the European Parliament</strong>
         </p>
       </div>
-      <div class="text-nowrap flex gap-4">
+      <div class="text-nowrap flex gap-4 md:ms-auto">
         <a href="mailto:europarl@compromis.net">europarl@compromis.net</a>
         <a href="https://compromis.net">{{ $t('global.privacy_policy') }}</a>
       </div>
