@@ -99,54 +99,52 @@ const { t, tm, rt } = useI18n({
         {
           "title": "Reembolsos rápidos y automáticos",
           "text": "Cuando tu vuelo se cancela o se retrasa, no deberías luchar por tu dinero. Queremos que los reembolsos sean automáticos y sin papeleos innecesarios.",
-          "icon": "icon",
-          "highlight": true
+          "icon": "receipt_1f9fe.png"
         },
         {
           "title": "Información clara y en tiempo real",
           "text": " Si hay retrasos o problemas con tu vuelo, te mereces saberlo en menos de 30 minutos. Queremos obligar a las aerolíneas a informarte por mensaje o correo de cualquier cambio.",
-          "icon": "icon"
+          "icon": "information_2139-fe0f.png"
         },
         {
           "title": "Que los intermediarios se hagan responsables",
           "text": "Las plataformas de reservas y agencias online no pueden lavarse las manos. Si cobran por tu vuelo, también deben devolverte el dinero o compensarte cuando algo falla.",
-          "icon": ""
+          "icon": "world-map_1f5fa-fe0f.png"
         },
         {
           "title": "Multas ejemplares para los abusos",
           "text": "No más excusas. Las aerolíneas que se salten las normas deben pagar multas proporcionales a sus ganancias para que no les salga barato ignorar tus derechos.",
-          "icon": ""
+          "icon": "judge_1f9d1-200d-2696-fe0f.png"
         },
         {
           "title": "Protección contra insolvencias",
           "text": "Si una aerolínea quiebra, no debería dejarte tirado. Propondremos un fondo obligatorio que garantice tu reembolso y repatriación en estos casos.",
-          "icon": ""
+          "icon": "chart-decreasing_1f4c9.png"
         },
         {
           "title": "Accesibilidad para todos",
           "text": "Viajar debe ser un derecho para todos. Exigimos mejoras reales para pasajeros con movilidad reducida: asistencia completa en aeropuertos y aviones sin excusas.",
-          "icon": "",
-          "highlight": true
+          "icon": "wheelchair-symbol_267f.png"
         },
         {
           "title": "Un sistema de compensación universal",
           "text": "Queremos un sistema armonizado que haga las compensaciones más fáciles y rápidas. Si tu vuelo tiene problemas, las aerolíneas deberán procesar tu compensación en cuestión de días, no semanas o meses.",
-          "icon": ""
+          "icon": "euro-banknote_1f4b6.png"
         },
         {
           "title": "Más control y transparencia en la industria",
           "text": "Las agencias nacionales de control deben tener más poder para auditar y sancionar a las aerolíneas e intermediarios que no cumplan. Queremos informes públicos y frecuentes sobre sus prácticas.",
-          "icon": ""
+          "icon": "magnifying-glass-tilted-right_1f50e.png"
         },
         {
           "title": "Derecho a cancelar sin excusas",
           "text": "En situaciones de crisis, todos los pasajeros deberían tener el derecho a cancelar sus billetes sin penalizaciones. Basta de aprovecharse de la incertidumbre para no devolverte lo que es tuyo.",
-          "icon": ""
+          "icon": "cross-mark_274c.png"
         },
         {
           "title": "Derechos en todos los transportes no solo en vuelos",
           "text": "Tu derecho como pasajero debe ser el mismo en vuelos, trenes, autobuses y cualquier otro transporte. Vamos a luchar por normas que te protejan en todos los medios de transporte.",
-          "icon": ""
+          "icon": "high-speed-train_1f684.png"
         }
       ]
     },
@@ -157,52 +155,52 @@ const { t, tm, rt } = useI18n({
         {
           "title": "Quick and automatic refunds",
           "text": "When your flight is cancelled or delayed, you shouldn’t have to fight for your money. We want refunds to be automatic and without unnecessary paperwork.",
-          "icon": "icon"
+          "icon": "receipt_1f9fe.png"
         },
         {
           "title": "Clear and real-time information",
           "text": "If there are delays or problems with your flight, you deserve to know within 30 minutes. We want airlines to be required to inform you by message or email of any changes.",
-          "icon": "icon"
+          "icon": "information_2139-fe0f.png"
         },
         {
           "title": "Hold intermediaries accountable",
           "text": "Booking platforms and online agencies cannot wash their hands of responsibility. If they charge you for the flight, they must also refund you or compensate you when something goes wrong.",
-          "icon": ""
+          "icon": "world-map_1f5fa-fe0f.png"
         },
         {
           "title": "Exemplary fines for abuse",
           "text": "No more excuses. Airlines that break the rules should face fines proportional to their earnings, so it’s not cheaper for them to ignore your rights.",
-          "icon": ""
+          "icon": "judge_1f9d1-200d-2696-fe0f.png"
         },
         {
           "title": "Protection against insolvencies",
           "text": "If an airline goes bankrupt, they shouldn’t leave you stranded. We will propose a mandatory fund to guarantee your refund and repatriation in such cases.",
-          "icon": ""
+          "icon": "chart-decreasing_1f4c9.png"
         },
         {
           "title": "Accessibility for all",
           "text": "Travel should be a right for everyone. We demand real improvements for passengers with reduced mobility: full assistance in airports and planes without excuses.",
-          "icon": ""
+          "icon": "wheelchair-symbol_267f.png"
         },
         {
           "title": "A universal compensation system",
           "text": "We want a harmonised system to make compensation easier and quicker. If your flight has issues, airlines must process your compensation within days, not weeks or months.",
-          "icon": ""
+          "icon": "euro-banknote_1f4b6.png"
         },
         {
           "title": "More control and transparency in the industry",
           "text": "National regulatory agencies must have more power to audit and penalise airlines and intermediaries that don’t comply. We want public and frequent reports on their practices.",
-          "icon": ""
+          "icon": "magnifying-glass-tilted-right_1f50e.png"
         },
         {
           "title": "Right to cancel without excuses",
           "text": "In times of crisis, all passengers should have the right to cancel their tickets without penalties. No more taking advantage of uncertainty to withhold what’s rightfully yours.",
-          "icon": ""
+          "icon": "cross-mark_274c.png"
         },
         {
           "title": "Rights across all transport, not just flights",
           "text": "Your rights as a passenger should be the same on flights, trains, buses, and any other mode of transport. We will fight for rules that protect you across all transportation.",
-          "icon": ""
+          "icon": "high-speed-train_1f684.png"
         }
       ]
     }
