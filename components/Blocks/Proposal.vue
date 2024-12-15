@@ -26,7 +26,7 @@ const { t, tm, rt } = useI18n({
           trigger="#proposal"
           start="top center"
         >
-          <h3 class="font-extrabold text-lg mb-4 text-balance leading-none pr-12">{{ rt(proposal.title) }}</h3>
+          <h3 class="font-extrabold text-lg mb-4 text-balance leading-none pr-12 hyphens-auto">{{ rt(proposal.title) }}</h3>
           <p class="text-base mt-auto">{{ rt(proposal.text) }}</p>
         </LegosCard>
       </LegosHoverable>
