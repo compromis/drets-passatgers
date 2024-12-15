@@ -44,11 +44,25 @@ const { t } = useI18n({
 <i18n lang="json">
   {
     "val": {
+      "item0": "Pèrdua o demora de l'equipatge:",
+      "item1": "Reembossament de despeses essencials (roba, articles d'higiene, etc.).",
+      "item2": "Compensació fins a 1.300 €, segons el Conveni de Montreal.",
+      "item3": "En cas d'equipatge danyat:",
+      "item4": "Dret a reparació o compensació econòmica, sempre que denuncies el dany abans de 7 dies."
+    },
+    "cas": {
       "item0": "Tanto en pérdida como en demora:",
       "item1": "Reembolso de gastos esenciales (ropa, artículos de aseo, etc.).",
       "item2": "Compensación de hasta 1.300 €, según el Convenio de Montreal.",
       "item3": "En caso de equipaje dañado:",
       "item4": "Derecho a reparación o compensación económica, siempre que denuncies el daño antes de 7 días. "
+    },
+    "eng": {
+      "item0": "Lost or delayed baggage:",
+      "item1": "Reimbursement for essential expenses (clothes, toiletries, etc.).",
+      "item2": "Compensation up to €1,300, according to the Montreal Convention.",
+      "item3": "In case of damaged baggage:",
+      "item4": "Right to repair or financial compensation, provided you report the damage within 7 days."
     }
   }
 </i18n>

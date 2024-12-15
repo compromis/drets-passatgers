@@ -54,12 +54,28 @@ const { t } = useI18n({
 <i18n lang="json">
   {
     "val": {
+      "item1": "Reembossament complet del bitllet en un termini de 7 dies.",
+      "item2": "Transport alternatiu fins a la teua destinació.",
+      "item3": "Compensació Econòmica: Igual que en els retards (250-600 €), excepte si:",
+      "item31": "T'han avisat amb més de 14 dies d'antelació.",
+      "item32": "T'ofereixen un vol alternatiu amb horaris similars.",
+      "item4": "Dret a Assistència: Menjars, begudes i allotjament si la cancel·lació implica una espera prolongada."
+    },
+    "cas": {
       "item1": "Reembolso completo del billete en un plazo de 7 días.",
       "item2": "Transporte alternativo hasta tu destino.",
       "item3": "Compensación Económica: Igual que en los retrasos (250-600 €), salvo que:",
       "item31": "Te hayan avisado con más de 14 días de antelación.",
       "item32": "Ofrezcan un vuelo alternativo con horarios similares.",
       "item4": "Derecho a Asistencia: Comidas, bebidas y alojamiento si la cancelación implica espera prolongada."
+    },
+    "eng": {
+      "item1": "Full ticket refund within 7 days.",
+      "item2": "Alternative transport to your destination.",
+      "item3": "Financial Compensation: Same as delays (€250-€600), unless:",
+      "item31": "You were informed more than 14 days in advance.",
+      "item32": "An alternative flight is offered with similar timings.",
+      "item4": "Right to Assistance: Meals, drinks, and accommodation if the cancellation results in a prolonged wait."
     }
   }
 </i18n>

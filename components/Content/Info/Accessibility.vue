@@ -32,8 +32,16 @@ const { t } = useI18n({
 <i18n lang="json">
   {
     "val": {
+      "item1": "Dret a rebre assistència gratuïta a l'aeroport, a l'embarcar i desembarcar.",
+      "item2": "Transport gratuït d'equips de mobilitat (com cadires de rodes)."
+    },
+    "cas": {
       "item1": "Derecho a recibir asistencia gratuita en el aeropuerto, al embarcar y al desembarcar.",
       "item2": "Transporte gratuito de equipos de movilidad (sillas de ruedas, por ejemplo)."
+    },
+    "eng": {
+      "item1": "Right to free assistance at the airport, during boarding, and disembarking.",
+      "item2": "Free transport of mobility equipment (e.g., wheelchairs)."
     }
   }
 </i18n>

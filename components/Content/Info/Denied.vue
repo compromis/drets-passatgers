@@ -46,11 +46,25 @@ const { t } = useI18n({
 <i18n lang="json">
   {
     "val": {
+      "item1": "Compensació Automàtica: Entre 250 i 600 €, segons la distància del vol.",
+      "item2": "Reubicació o Reembossament:",
+      "item21": "Un vol alternatiu com més prompte millor.",
+      "item22": "O el reembossament complet del bitllet.",
+      "item3": "Assistència Obligatòria: Menjars, allotjament i transport, si cal."
+    },
+    "cas": {
       "item1": "Compensación Automática: Entre 250 y 600 €, según la distancia del vuelo.",
       "item2": "Reubicación o Reembolso:",
       "item21": "Un vuelo alternativo lo antes posible.",
       "item22": "O el reembolso completo del billete.",
       "item3": "Asistencia Obligatoria: Comidas, alojamiento y transporte, si es necesario."
+    },
+    "eng": {
+      "item1": "Automatic Compensation: Between €250 and €600, depending on the flight distance.",
+      "item2": "Rebooking or Refund:",
+      "item21": "An alternative flight as soon as possible.",
+      "item22": "Or a full refund of the ticket.",
+      "item3": "Mandatory Assistance: Meals, accommodation, and transport, if necessary."
     }
   }
 </i18n>

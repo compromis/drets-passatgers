@@ -53,6 +53,21 @@ const { t } = useI18n({
   {
     "val": {
       "over2": {
+        "tag": "+2 hores",
+        "title": "Dret a Assistència:",
+        "text": "🍔 Menjar, 🧃 begudes, 🏨 allotjament i 💺 transport"
+      },
+      "over3": {
+        "tag": "+3 hores",
+        "title": "Dret a Compensació Econòmica 💶",
+        "250": "Vols de fins a 1.500 km",
+        "400": "Vols dins de la UE de més de 1.500 km i altres vols entre 1.500-3.500 km",
+        "600": "Vols de més de 3.500 km"
+      },
+      "exceptions": "Excepcions: No s'aplica si el retard es deu a circumstàncies extraordinàries, com ara mal temps, riscos de seguretat, etc."
+    },
+    "cas": {
+      "over2": {
         "tag": "+2 horas",
         "title": "Derecho a Asistencia:",
         "text": "🍔 Comida, 🧃bebidas, 🏨 alojamiento y 💺transporte"
@@ -65,6 +80,21 @@ const { t } = useI18n({
         "600": "Vuelos de más de 3.500km"
       },
       "exceptions": "Excepciones: No se aplica si el retraso es por circunstancias extraordinarias (mal clima, riesgos de seguridad, etc.)"
+    },
+    "eng": {
+      "over2": {
+        "tag": "+2 hours",
+        "title": "Right to Assistance:",
+        "text": "🍔 Food, 🧃 drinks, 🏨 accommodation, and 💺 transport"
+      },
+      "over3": {
+        "tag": "+3 hours",
+        "title": "Right to Financial Compensation 💶",
+        "250": "Flights of up to 1,500 km",
+        "400": "Intra-EU flights over 1,500 km and other flights between 1,500-3,500 km",
+        "600": "Flights over 3,500 km"
+      },
+      "exceptions": "Exceptions: Not applicable if the delay is due to extraordinary circumstances, such as bad weather, security risks, etc."
     }
   }
 </i18n>
