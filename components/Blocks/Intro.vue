@@ -11,7 +11,7 @@
         <p><strong>Denúncia, reclama i lluitem conjuntament per ampliar els nostres drets!</strong></p>
       </div>
       <div v-if="$i18n.locale === 'cas'">
-        <p>Hay aerolíneas que ganan millonadas incumpliendo tus derechos: <span class="pill delay">retrasos</span>, <span class="pill delay">cancelaciones</span> y <span class="pill denied">abusos</span> parecen parte de su modelo de negocio mientras pierdes tiempo y dinero.</p>
+        <p>Hay aerolíneas que ganan millonadas incumpliendo tus derechos: <span class="pill delay">retrasos</span>, <span class="pill cancelled">cancelaciones</span> y <span class="pill denied">abusos</span> parecen parte de su modelo de negocio mientras pierdes tiempo y dinero.</p>
         <p>Aquí te ayudamos a defender tus derechos: a hacerles cumplir las normas ya ir más allá para proteger a los pasajeros.</p>
         <p><strong>¡Denuncia, reclama y luchamos conjuntamente para ampliar nuestros derechos!</strong></p>
       </div>
