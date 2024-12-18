@@ -57,9 +57,9 @@ function reset () {
 </script>
 
 <template>
-  <section id="form" class="form container mx-auto md:-mt-24 mb-16 relative z-[20] p-site pb-10 text-base">
+  <section id="form" class="form container mx-auto mt-6 md:-mt-24 mb-16 relative z-[20] p-site pb-10 text-base">
     <LegosCard class="max-w-[800px] ms-auto overflow-clip" edge animate>
-      <h2 class="flex px-6 py-4 gap-4 font-bold border-b-2 text-md">
+      <h2 class="flex px-6 py-2 gap-4 font-bold font-headline uppercase border-b-2 text-lg">
         <img src="../../assets/images/triangle.svg" alt="" />
         {{ $t('form.heading') }}
       </h2>

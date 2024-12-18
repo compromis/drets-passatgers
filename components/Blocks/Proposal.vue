@@ -6,7 +6,7 @@ const { t, tm, rt } = useI18n({
 
 <template>
   <section id="proposal" class="proposal bg-blue pt-8">
-    <div class="container p-site text-white mb-8">
+    <div class="container px-10 md:px-site py-site text-white md:mb-8">
       <h2 class="font-extrabold text-xl leading-none mb-4 text-balance">{{ t('title') }}</h2>
       <p class="text-md">{{ t('text') }}</p>
     </div>

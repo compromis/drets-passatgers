@@ -6,7 +6,7 @@
   <div class="intro pt-10 container mx-auto p-site">
     <LegosCard class="max-w-[800px] text-base">      
       <div v-if="$i18n.locale === 'val'">
-        <p>Hi ha aerolínies que guanyen milionades incomplint els teus drets: retards, cancel·lacions i abusos pareixen part del seu model de negoci mentre tu perds temps i diners.</p>
+        <p>Hi ha aerolínies que guanyen milionades incomplint els teus drets: <span class="pill delay">retards</span>, <span class="pill cancelled">cancel·lacions</span> i <span class="pill denied">abusos</span> pareixen part del seu model de negoci mentre tu perds temps i diners.</p>
         <p>Ací t'ajudem a defensar els teus drets: a fer-los complir les normes i a anar més enllà per protegir els passatgers.</p>
         <p><strong>Denúncia, reclama i lluitem conjuntament per ampliar els nostres drets!</strong></p>
       </div>
@@ -49,7 +49,7 @@
   .pill {
     color: var(--white);
     border-radius: 2em;
-    padding: .25em .5em;
+    padding: 0 .5em;
     display: inline-flex;
     align-items: center;
     font-weight: bold;

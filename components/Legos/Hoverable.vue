@@ -4,15 +4,31 @@ const props = defineProps({
   icon: { type: String, default: null },
 })
 
+const card = ref(null)
+const { $gsap } = useNuxtApp()
 const { random } = useUtils()
 const { data: rotate } = await useAsyncData(
   'rotate' + props.id,
   () => random(-3,3)
 )
+
+onMounted(() => {
+  const mm = $gsap.matchMedia()
+  mm.add("(hover: none)", () => {
+    $gsap.to(card.value, {
+      scrollTrigger: {
+        trigger: card.value,
+        start: 'top center',
+        end: '+=200',
+        toggleClass: 'active'
+      }
+    })
+  })
+})
 </script>
 
 <template>
-  <div class="relative hoverable" :style="{
+  <div ref="card" class="relative hoverable" :style="{
     '--rotate': `${rotate}deg`
   }">
     <slot />
@@ -25,7 +41,6 @@ const { data: rotate } = await useAsyncData(
   transition: .5s ease;
   cursor: default;
 }
-
 .icon {
   position: absolute;
   right: 0;
@@ -37,12 +52,35 @@ const { data: rotate } = await useAsyncData(
   transition: .5s ease;
 }
 
-.hoverable:hover {
-  transform: rotate(var(--rotate)) scale(1.07);
-  z-index: 100;
+@media (hover: hover) {
+  .hoverable {
+    &:hover {
+      transform: rotate(var(--rotate)) scale(1.07);
+      z-index: 100;
 
-  .icon {
-    scale: 1;
+      .icon {
+        scale: 1;
+      }
+    }
+  }
+}
+
+@media (hover: none) {
+  .hoverable {
+    scale: .95;
+    padding-inline: var(--spacer-2);
+
+    :deep(.card) {
+      padding-right: 20%;
+    }
+  }
+
+  .active {
+    transform: rotate(var(--rotate)) scale(1.07);
+    
+    .icon {
+      scale: 1;
+    }
   }
 }
 </style>

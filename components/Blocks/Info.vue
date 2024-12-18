@@ -39,7 +39,7 @@ const items = [
   <div class="info bg-gradient-to-b from-blue/0 to-blue pb-10">
     <div class="container p-site mx-auto text-base">
       <LegosCard class="info-card overflow-clip" edge animate>
-        <h2 class="font-bold px-6 py-4 text-md">{{ $t('info.heading') }}</h2>
+        <h2 class="font-bold font-headline px-6 py-4 text-lg uppercase">{{ $t('info.heading') }}</h2>
         <div class="px-6 pb-4 border-b-2 info-text">
           <template v-if="$i18n.locale === 'val'">
             <p>
