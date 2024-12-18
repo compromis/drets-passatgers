@@ -56,7 +56,7 @@ export default {
     submitting: 'Enviando...',
     optional: 'Opcional',
     submitted: 'Hemos recibido tu denuncia',
-    submitted_text: 'La tramitaremos por ti y nos pondremos en contacto con más información.',
+    submitted_text: 'Gracias por confiar en Compromís y enviarnos tu denuncia. Te hemos enviado más información al correo.',
     new: 'Enviar otra denuncia'
   },
   info: {

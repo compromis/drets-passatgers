@@ -56,7 +56,7 @@ export default {
     submitting: 'Enviant...',
     optional: 'Opcional',
     submitted: 'Hem rebut la teua denúncia',
-    submitted_text: 'La tramitarem per tu i ens posarem en contacte amb més informació.',
+    submitted_text: 'Gràcies per confiar en Compromís i enviar-nos la teua queixa. T\'hem enviat més informació al teu correu.',
     new: 'Enviar altra denúncia'
   },
   info: {

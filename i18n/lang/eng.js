@@ -55,7 +55,7 @@ export default {
     submitting: 'Submitting...',
     optional: 'Optional',
     submitted: 'We have received your complaint',
-    submitted_text: 'La tramitarem per tu i ens posarem en contacte amb més informació.',
+    submitted_text: 'Thank you for trusting Compromís and sending us your complaint. We have sent you more information on your inbox.',
     new: 'Send another complaint'
   },
   info: {
