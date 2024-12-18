@@ -37,7 +37,7 @@ const { t, tm, rt } = useI18n({
 <i18n lang="json">
   {
     "val": {
-      "title": "Perquè els teus drets no són negociables. És hora d'exigir més!",
+      "title": "Perquè els teus drets no són negociables. És hora d'exigir-ne més!",
       "text": "Els drets actuals no són suficients i volem anar més enllà. Aquestes són les 10 accions que exigirem a Europa per ampliar els teus drets com a passatger:",
       "proposals": [
         {

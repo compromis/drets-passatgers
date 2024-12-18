@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  id: { type: String, required: true },
+  id: { type: [String, Number], required: true },
   icon: { type: String, default: null },
 })
 

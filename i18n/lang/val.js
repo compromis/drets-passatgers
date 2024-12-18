@@ -6,9 +6,9 @@ export default {
   },
   meta: {
     title: 'Els teus drets com a passatger no son un negoci - Greens/EFA - Compromís',
-    description: 'Les aerolínies guanyen milions ignorant els teus drets. Retards, cancel·lacions i abusos són part del seu model de negoci, mentre tu perds.',
+    description: 'Hi ha aerolínies que guanyen milionades incomplint els teus drets: retards, cancel·lacions i abusos pareixen part del seu model de negoci mentre tu perds temps i diners.',
     keywords: 'drets, passatgers, vol retardat, vol cancel·lat, maleta perduda, maleta danyada, vol amb retard',
-    image: 'https://dretspassatgers.com/images/og_val.jpg'
+    image: 'https://dretspassatgers.com/images/og-image/val.png'
   },
   global: {
     privacy_policy: 'Política de privacitat',
@@ -60,7 +60,7 @@ export default {
     new: 'Enviar altra denúncia'
   },
   info: {
-    heading: 'Coneix els teus drets',
+    heading: 'Ací et contem tot sobre els drets que no volen que conegues.',
     delayed: {
       heading: 'En Cas de Retard'
     },
@@ -81,8 +81,9 @@ export default {
     title: 'Fes difusió',
     text: 'Comparteix aquesta pàgina amb les teues amistats.',
     other: 'Altres...',
-    shareable_title: '',
-    shareable_image: '',
-    shareable_text: 'message'
+    shareable_title: 'Els teus drets com a passatger no son un negoci - Greens/EFA - Compromís',
+    shareable_image: 'https://dretspassatgers.com/images/og-image/val.png',
+    shareable_text: 'Hi ha aerolínies que guanyen milionades incomplint els teus drets: retards, cancel·lacions i abusos pareixen part del seu model de negoci mentre tu perds temps i diners.',
+    shareable_url: 'https://dretspassatgers.com'
   }
 }

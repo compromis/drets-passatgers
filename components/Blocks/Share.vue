@@ -3,8 +3,7 @@ const { locale, t } = useI18n()
 
 /* Url and text */
 const url = computed(() => {
-  const lang = locale.value === 'val' ? '' : `/${locale.value}`
-  return encodeURIComponent(`https://maletaperduda.com${lang}`)
+  return t('share.shareable_url')
 })
 
 const text = computed(() => {

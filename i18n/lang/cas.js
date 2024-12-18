@@ -6,9 +6,9 @@ export default {
   },
   meta: {
     title: 'Tus derechos como pasajero no son un negocio - Greens/EFA - Compromís',
-    description: 'Las aerolíneas ganan millones ignorando tus derechos. Retrasos, cancelaciones y abusos son parte de su modelo de negocio, mientras tú pierdes.',
+    description: 'Hay aerolíneas que ganan millonadas incumpliendo tus derechos: retrasos, cancelaciones y abusos parecen parte de su modelo de negocio mientras pierdes tiempo y dinero.',
     keywords: 'derechos, pasajeros, vuelo retrasado, vuelo cancelado, maleta perdida, maleta dañada, vuelo retrasado',
-    image: 'https://derechospasajeros.com/images/og_val.jpg'
+    image: 'https://derechospasajeros.com/images/og-image/eng.png'
   },
   global: {
     privacy_policy: 'Política de privacidad',
@@ -60,7 +60,7 @@ export default {
     new: 'Enviar otra denuncia'
   },
   info: {
-    heading: 'Conoce tus derechos',
+    heading: 'Aquí te contamos todo sobre los derechos que no quieren que conozcas.',
     delayed: {
       heading: 'Si se retrasa tu vuelo'
     },
@@ -81,8 +81,9 @@ export default {
     title: 'Haz difusión',
     text: 'Comparte esta página con tus amistades.',
     other: 'Otros...',
-    shareable_title: '',
-    shareable_image: '',
-    shareable_text: 'message'
+    shareable_title: 'Tus derechos como pasajero no son un negocio - Greens/EFA - Compromís',
+    shareable_image: 'https://derechospasajeros.com/images/og-image/eng.png',
+    shareable_text: 'Hay aerolíneas que ganan millonadas incumpliendo tus derechos: retrasos, cancelaciones y abusos parecen parte de su modelo de negocio mientras pierdes tiempo y dinero.',
+    shareable_url: 'https://derechospasajeros.com'
   }
 }

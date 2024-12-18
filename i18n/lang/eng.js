@@ -6,9 +6,9 @@ export default {
   },
   meta: {
     title: 'Your rights as a passenger are not negotiable - Greens/EFA - Compromís',
-    description: 'Airlines make millions by ignoring your rights. Delays, cancellations, and abuse are part of their business model, while you lose out',
+    description: 'There are airlines that make millions by violating your rights: delays, cancellations and abuses seem to be part of their business model while you lose time and money.',
     keywords: 'rights, passenger, delayed flight, cancelled flight, lost luggage, damaged luggage, accessibility airport',
-    image: 'https://quenotetiren.com/images/og_val.jpg'
+    image: 'https://paxrights.com/images/og-image/eng.png'
   },
   global: {
     privacy_policy: 'Privacy Policy',
@@ -59,7 +59,7 @@ export default {
     new: 'Send another complaint'
   },
   info: {
-    heading: 'Know your rights',
+    heading: 'Here we tell you all about the rights they don\'t want you to know about.',
     delayed: {
       heading: 'If your flight is delayed'
     },
@@ -80,8 +80,9 @@ export default {
     title: 'Share this page',
     text: 'Share this page with your friends',
     other: 'Other...',
-    shareable_title: '',
-    shareable_image: '',
-    shareable_text: 'message'
+    shareable_title: 'Your rights as a passenger are not negotiable - Greens/EFA - Compromís',
+    shareable_image: 'https://paxrights.com/images/og-image/eng.png',
+    shareable_text: 'There are airlines that make millions by violating your rights: delays, cancellations and abuses seem to be part of their business model while you lose time and money.',
+    shareable_url: 'https://paxrights.com'
   }
 }
