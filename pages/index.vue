@@ -6,7 +6,7 @@ const title = t('meta.title')
 const description = t('meta.description')
 const ogImage = t('meta.image')
 const keywords = t('meta.keywords')
-const themeColor = '#148E6C'
+const themeColor = '#000'
 const twitterSite = '@compromis'
 
 useServerSeoMeta({
